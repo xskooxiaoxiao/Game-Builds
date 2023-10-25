@@ -44,6 +44,10 @@ public class BuildManager : MonoBehaviour
         {
             selectedTurretData = TurretData;
         }
+        else
+        {
+            selectedTurretData = null;
+        }
     }
 }
     
