@@ -13,7 +13,7 @@ public class EnemySpawn : MonoBehaviour
 
     public int PlayerHealth = 10;
 
-    MapSystem mapSystem2;
+    //MapSystem mapSystem2;
 
     //Vector3 endpoint;
 
@@ -24,7 +24,7 @@ public class EnemySpawn : MonoBehaviour
 
 void Awake()
     {
-        mapSystem2 = GameObject.Find("Plane").GetComponent<MapSystem>();
+        //mapSystem2 = GameObject.Find("Plane").GetComponent<MapSystem>();
         //endpoint = mapSystem.target[mapSystem.targeti-1];
     }
 

@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     // Adjust the speed for the application.
     public float speed = 5.0f; //speed
-    MapSystem mapSystem;
+    //MapSystem mapSystem;
     EnemySpawn enemySpawn;
     
     // The target position.
@@ -14,10 +14,10 @@ public class EnemyMovement : MonoBehaviour
     //private Vector3 target;
     //Vector3[] target;
     //private Vector3 tarpos;
-    int i=1;
+    int i=0;
     Vector3[] pin;
     int pini;
-    float enemyheight = 0.5f;
+    float enemyheight = 1f;
 
     public int DamagetoPlayerHealth = 1; //Damage to PlayerHealth
 
@@ -40,18 +40,26 @@ void Awake()
         target[2] = new Vector3(5.8f, 0.0f, 2.8f);
         */
         
-        mapSystem = GameObject.Find("Plane").GetComponent<MapSystem>();
-        enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
-        pini = mapSystem.targeti;
+        //mapSystem = GameObject.Find("Plane").GetComponent<MapSystem>();
+        //enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
+        transform.position = new Vector3(-18.0f,enemyheight,21.0f);
+        pini = 7;
         pin = new Vector3[pini];
+        pin[0] = new Vector3(-18.0f,0.0f,21.0f);
+        pin[1] = new Vector3(-18.0f,0.0f,10.55f);
+        pin[2] = new Vector3(-12.0f,0.0f,10.55f);
+        pin[3] = new Vector3(-12.0f,0.0f,5.55f);
+        pin[4] = new Vector3(2f,0.0f,5.55f);
+        pin[5] = new Vector3(2f,0.0f,13.55f);
+        pin[6] = new Vector3(11f,0.0f,13.55f);
         for (int j=0;j<pini;j++)
         {
-            pin[j] = mapSystem.target[j];
+            //pin[j] = mapSystem.target[j];
             pin[j][1] = enemyheight;
             
         }
 
-        transform.position = mapSystem.target[0]; //enemy spawnpoint
+         //enemy spawnpoint
     }
 
 

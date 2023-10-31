@@ -24,12 +24,12 @@ public class BuildManager : MonoBehaviour
                 if (isCollider)
                 {
                     platform platform2 = hit.collider.GetComponent<platform>();//Detect Grid
-                    if(platform2.turretGo == null)
+                    if (selectedTurretData != null && platform2.turretGo == null)
                     {
                         // Able to build turret
                         platform2.BuildTurret(selectedTurretData.turretPrefab);
                     }
-                    else
+                    else if (platform2.turretGo != null)
                     {
                         //Upgrade
                     }
