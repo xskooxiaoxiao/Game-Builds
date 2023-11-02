@@ -147,13 +147,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 21354853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b991a345a0ca58b46b6869bf93ec3f72, type: 3}
+  m_Script: {fileID: 11500000, guid: e1c9ddd6a44e70649806aa76606a630c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCamera: {fileID: 963194228}
   Controller: {fileID: 21354855}
-  Speed: 4
-  Sensitivity: 4
+  Speed: 1
+  Sensitivity: 1
 --- !u!143 &21354855
 CharacterController:
   m_ObjectHideFlags: 0
