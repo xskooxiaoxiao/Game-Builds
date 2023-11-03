@@ -17,7 +17,7 @@ public class EnemyMovement : MonoBehaviour
     int i=0;
     Vector3[] pin;
     int pini;
-    float enemyheight = -2.3f;
+    float enemyheight = 1f;
 
     public int DamagetoPlayerHealth = 1; //Damage to PlayerHealth
 
@@ -46,12 +46,12 @@ void Awake()
         pini = 7;
         pin = new Vector3[pini];
         pin[0] = new Vector3(-18.0f,0.0f,21.0f);
-        pin[1] = new Vector3(-18.0f,0.0f,10.5f);
-        pin[2] = new Vector3(-12.3f,0.0f,10.5f);
-        pin[3] = new Vector3(-12.3f,0.0f,6.8f);
-        pin[4] = new Vector3(2.3f,0.0f,6.8f);
-        pin[5] = new Vector3(2.3f,0.0f,13.4f);
-        pin[6] = new Vector3(10.6f,0.0f,13.4f);
+        pin[1] = new Vector3(-18.0f,0.0f,10.55f);
+        pin[2] = new Vector3(-12.0f,0.0f,10.55f);
+        pin[3] = new Vector3(-12.0f,0.0f,5.55f);
+        pin[4] = new Vector3(2f,0.0f,5.55f);
+        pin[5] = new Vector3(2f,0.0f,13.55f);
+        pin[6] = new Vector3(11f,0.0f,13.55f);
         for (int j=0;j<pini;j++)
         {
             //pin[j] = mapSystem.target[j];
