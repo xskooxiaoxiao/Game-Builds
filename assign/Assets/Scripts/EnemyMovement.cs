@@ -40,8 +40,8 @@ void Awake()
         target[2] = new Vector3(5.8f, 0.0f, 2.8f);
         */
         
-        //mapSystem = GameObject.Find("Plane").GetComponent<MapSystem>();
-        //enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
+        //mapSystem = GameObject.Find("Plane").GetComponent<MapSystem>();//
+        enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
         transform.position = new Vector3(-18.0f,enemyheight,21.0f);
         pini = 7;
         pin = new Vector3[pini];
