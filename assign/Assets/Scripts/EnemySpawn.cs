@@ -11,7 +11,7 @@ public class EnemySpawn : MonoBehaviour
     float timer=0;
     //float timer2=0;
 
-    public int PlayerHealth = 10;
+    //public int PlayerHealth = 10;
 
     //MapSystem mapSystem2;
 

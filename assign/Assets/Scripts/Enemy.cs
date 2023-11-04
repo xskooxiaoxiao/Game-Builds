@@ -6,6 +6,13 @@ public class Enemy : MonoBehaviour
 {
     public int hp = 150;
 
+    PlayerState playerState;
+
+    void Awake()
+    {
+        playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
+    }
+
     public void TakeDamage(int damage)
     {
         if (hp <= 0) return;
@@ -19,5 +26,6 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Destroy(this.gameObject);
+        playerState.enemyTotal -= 1;
     }
 }

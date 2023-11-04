@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     public float speed = 5.0f; //speed
     //MapSystem mapSystem;
     EnemySpawn enemySpawn;
+    PlayerState playerState;
     
     // The target position.
     //private Transform target;
@@ -42,6 +43,7 @@ void Awake()
         
         //mapSystem = GameObject.Find("Plane").GetComponent<MapSystem>();//
         enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
+        playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
         transform.position = new Vector3(-18.0f,enemyheight,21.0f);
         pini = 7;
         pin = new Vector3[pini];
@@ -94,8 +96,9 @@ void Awake()
         if (transform.position == pin[pini-1]) 
         {
             Destroy (gameObject);
-            enemySpawn.PlayerHealth -= DamagetoPlayerHealth;
-            Debug.Log(enemySpawn.PlayerHealth);
+            playerState.PlayerHealth -= DamagetoPlayerHealth;
+            playerState.enemyTotal -= 1;
+            Debug.Log(playerState.PlayerHealth);
         }
     }
 }
