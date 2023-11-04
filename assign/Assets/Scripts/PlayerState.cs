@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,6 +14,7 @@ public class PlayerState : MonoBehaviour
     public Button MainMenu;
     public TextMeshProUGUI lose;
     public TextMeshProUGUI win;
+    public TextMeshProUGUI hp;
     public Image HPbar;
     
     EnemySpawn enemySpawn;
@@ -41,6 +43,10 @@ public class PlayerState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerHealth>=0)
+        {
+            hp.text = "HP:" + Convert.ToString(PlayerHealth);
+        }
         if (PlayerHealth<=0)
         {
             Retry.gameObject.SetActive(true);
