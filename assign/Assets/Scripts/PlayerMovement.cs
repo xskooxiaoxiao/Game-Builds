@@ -20,10 +20,19 @@ public class PlayerMovement : MonoBehaviour
     {
 
         PlayerMovementInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
-        PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        // Check if the right mouse button is held down to enable camera rotation
+        if (Input.GetMouseButton(1))
+        {
+            PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+            MovePlayerCamera();
+        }
+        else
+        {
+            // Reset mouse input if right mouse button is not held.
+            PlayerMouseInput = Vector2.zero; 
+        }
 
         MovePlayer();
-        MovePlayerCamera();
     }
     private void MovePlayer()
     {
