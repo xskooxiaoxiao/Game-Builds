@@ -13,7 +13,7 @@ public class BuildManager : MonoBehaviour
     public TurretData selectedTurretData;
     public Text moneyText;
     public Animator moneyAnimator;
-    private int money = 200;
+    public int money = 200;
 
     void ChangeMoney(int change = 0)
     {
@@ -23,6 +23,7 @@ public class BuildManager : MonoBehaviour
     
     void Update()
     {
+        moneyText.text = "$" + money;
         if (Input.GetMouseButtonDown(0))
         {
             if (EventSystem.current.IsPointerOverGameObject() == false)

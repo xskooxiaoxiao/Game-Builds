@@ -10,6 +10,7 @@ public class PlayerState : MonoBehaviour
     public int PlayerHealth = 10;
     public int enemyTotal;
 
+
     public Button Retry;
     public Button MainMenu;
     public TextMeshProUGUI lose;
