@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
 {
@@ -10,6 +11,15 @@ public class BuildManager : MonoBehaviour
 
     //The Turret to build
     public TurretData selectedTurretData;
+    public Text moneyText;
+    public Animator moneyAnimator;
+    private int money = 200;
+
+    void ChangeMoney(int change = 0)
+    {
+        money += change;
+        moneyText.text = "$" + money;
+    }
     
     void Update()
     {
@@ -27,7 +37,16 @@ public class BuildManager : MonoBehaviour
                     if (selectedTurretData != null && platform2.turretGo == null)
                     {
                         // Able to build turret
-                        platform2.BuildTurret(selectedTurretData.turretPrefab);
+                        if (money >= selectedTurretData.cost)
+                        {
+                            ChangeMoney(-selectedTurretData.cost);
+                            platform2.BuildTurret(selectedTurretData.turretPrefab);
+                        }
+                        else
+                        {
+                            //NoFund
+                            moneyAnimator.SetTrigger("NoFund");
+                        }
                     }
                     else if (platform2.turretGo != null)
                     {
