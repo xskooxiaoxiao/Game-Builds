@@ -156,7 +156,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.assign
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -918,6 +919,7 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Purchasing: 0
     UNet: 1
     Unity Ads: 0
   luminIcon:
@@ -939,10 +941,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: cd42caf2-2145-464a-acaa-58e7af305b68
+  cloudProjectId: 451c3aef-96e6-4992-b163-d13e3b5ebc42
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: assign (2)
+  projectName: assign
   organizationId: gouthamsai5059
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
