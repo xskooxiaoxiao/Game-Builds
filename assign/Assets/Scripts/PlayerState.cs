@@ -32,8 +32,9 @@ public class PlayerState : MonoBehaviour
         lose.gameObject.SetActive(false);
         win.gameObject.SetActive(false);
     }
-    public void Scene1(string SceneName) {  
+    public void Scene1(string SceneName) {  //load Scene
         UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);  
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -48,13 +49,14 @@ public class PlayerState : MonoBehaviour
         {
             hp.text = "HP:" + Convert.ToString(PlayerHealth);
         }
-        if (PlayerHealth<=0)
+        if (PlayerHealth<=0) //lose state
         {
             Retry.gameObject.SetActive(true);
             MainMenu.gameObject.SetActive(true);
             lose.gameObject.SetActive(true);
+            
         }
-        else if (PlayerHealth>0 && enemyTotal==0)
+        else if (PlayerHealth>0 && enemyTotal==0) //win state
         {
             Retry.gameObject.SetActive(true);
             MainMenu.gameObject.SetActive(true);
