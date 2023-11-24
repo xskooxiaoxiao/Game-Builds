@@ -82,7 +82,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bdbd72eb470d8458fe8bfe6e21465e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 150
+  hp: 140
+  earn: 20
 --- !u!1 &6132426735844088510
 GameObject:
   m_ObjectHideFlags: 0
