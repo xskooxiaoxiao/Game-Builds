@@ -7197,7 +7197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe6bf00084c2bd49b9d274b153c66a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 3426538988425600978, guid: 989301cef2e0c6f41a41034665036957, type: 3}
+  objectToSpawn: {fileID: 1385744693461648289, guid: 9fee9a4acdedabc4384a7c21459adef0, type: 3}
   enemyi: 20
   delay: 1
 --- !u!4 &1398296002

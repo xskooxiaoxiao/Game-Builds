@@ -18,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
     int i=0;
     Vector3[] pin;
     int pini;
-    float enemyheight = 1f;
+    public float enemyheight = 1f;
 
     public int DamagetoPlayerHealth = 1; //Damage to PlayerHealth
 
@@ -79,6 +79,10 @@ void Awake()
         // Move our position a step closer to the target.
         var step =  speed * Time.deltaTime; // calculate distance to move
         transform.position = Vector3.MoveTowards(transform.position, pin[i], step);
+        // Face toward waypoint
+        Vector3 relativePos = pin[i] - transform.position;
+        transform.rotation = Quaternion.LookRotation (relativePos);
+
 
         // Check if the position of the cube and sphere are approximately equal.
         if (Vector3.Distance(transform.position, pin[i]) < 0.001f)
