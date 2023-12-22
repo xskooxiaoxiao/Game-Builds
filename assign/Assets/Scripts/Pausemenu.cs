@@ -35,7 +35,11 @@ public class Mainmenu : MonoBehaviour
 
     public void Restart()
     { 
-        SceneManager.LoadScene("Level1");
+        // Create a temporary reference to the current scene.
+		Scene currentScene = SceneManager.GetActiveScene ();
+		// Retrieve the name of this scene.
+		string sceneName = currentScene.name;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);  
         Time.timeScale = 1;
 
     }

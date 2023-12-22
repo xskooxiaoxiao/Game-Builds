@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerState : MonoBehaviour
 {
@@ -32,9 +33,19 @@ public class PlayerState : MonoBehaviour
         lose.gameObject.SetActive(false);
         win.gameObject.SetActive(false);
     }
-    public void Scene1(string SceneName) {  //load Scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);  
+    public void Scene1() {  //load Scene
+        // Create a temporary reference to the current scene.
+		Scene currentScene = SceneManager.GetActiveScene ();
+		// Retrieve the name of this scene.
+		string sceneName = currentScene.name;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);  
         
+    }
+    public void Mainmenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        
+
     }
     // Start is called before the first frame update
     void Start()

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
     // Adjust the speed for the application.
     public float speed = 5.0f; //speed
-    //MapSystem mapSystem;
+    MapSystem mapSystem;
     EnemySpawn enemySpawn;
     PlayerState playerState;
     
@@ -41,25 +42,49 @@ void Awake()
         target[2] = new Vector3(5.8f, 0.0f, 2.8f);
         */
         
-        //mapSystem = GameObject.Find("Plane").GetComponent<MapSystem>();//
         enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
         playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
-        transform.position = new Vector3(-18.0f,enemyheight,21.0f);
-        pini = 7;
-        pin = new Vector3[pini];
-        pin[0] = new Vector3(-18.0f,0.0f,21.0f);
-        pin[1] = new Vector3(-18.0f,0.0f,10.55f);
-        pin[2] = new Vector3(-12.0f,0.0f,10.55f);
-        pin[3] = new Vector3(-12.0f,0.0f,5.55f);
-        pin[4] = new Vector3(2f,0.0f,5.55f);
-        pin[5] = new Vector3(2f,0.0f,13.55f);
-        pin[6] = new Vector3(11f,0.0f,13.55f);
-        for (int j=0;j<pini;j++)
-        {
+
+        // Create a temporary reference to the current scene.
+		Scene currentScene = SceneManager.GetActiveScene ();
+		// Retrieve the name of this scene.
+		string sceneName = currentScene.name;
+        if (sceneName == "Level1") 
+		{
+            transform.position = new Vector3(-18.0f,enemyheight,21.0f);
+            pini = 7;
+            pin = new Vector3[pini];
+            pin[0] = new Vector3(-18.0f,0.0f,21.0f);
+            pin[1] = new Vector3(-18.0f,0.0f,10.55f);
+            pin[2] = new Vector3(-12.0f,0.0f,10.55f);
+            pin[3] = new Vector3(-12.0f,0.0f,5.55f);
+            pin[4] = new Vector3(2f,0.0f,5.55f);
+            pin[5] = new Vector3(2f,0.0f,13.55f);
+            pin[6] = new Vector3(11f,0.0f,13.55f);
+            for (int j=0;j<pini;j++)
+            {
             //pin[j] = mapSystem.target[j];
             pin[j][1] = enemyheight;
             
-        }
+            }
+		}
+		else if (sceneName == "LevelR")
+		{
+			mapSystem = GameObject.Find("MAP").GetComponent<MapSystem>();
+            pini = mapSystem.targeti;
+            pin = new Vector3[pini];
+            for (int j=0;j<pini;j++)
+            {
+                pin[j] = mapSystem.target[j];
+                pin[j][1] = enemyheight;
+            
+            }
+
+            transform.position = pin[0]; //enemy spawnpoint
+		}
+
+
+        
 
          //enemy spawnpoint
     }

@@ -9,6 +9,7 @@ public class MapSystem : MonoBehaviour
     public Vector3[] target; //pinpoint position
     GameObject[] pinCylinder; //pinpoint reference
     GameObject[] pave; //path
+    public GameObject pathcube;
     GameObject[] wall; //wall
     public int targeti = 4; //number of pinpoint
     public float mapscale = 26.0f;// scale of the map
@@ -40,18 +41,18 @@ public class MapSystem : MonoBehaviour
         //SpawnWaypoint
         spawnpin();
 
-
+/*
         for (int i=0;i<targeti;i++)//pin cylinder spawn
         {
             pinCylinder[i] = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             pinCylinder[i].transform.localScale = new Vector3(0.15f, 1.0f, 0.15f);
             pinCylinder[i].transform.position = target[i];
         }
-
+*/
         
         for (int k=0;k<targeti-1;k++)//path spawning
         {
-            pave[k] = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            pave[k] = GameObject.Instantiate(pathcube);
             pave[k].GetComponent<Renderer>().material.color = new Color(171.0f/255.0f,100.0f/255.0f,46.0f/255.0f,1.0f);
             if (target[k][0] == target[k+1][0])
             {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1867951357039109708}
   - component: {fileID: 2925717138664096149}
   - component: {fileID: 268314000190958878}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5509350155278601443}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 8640224408161403969}
   - component: {fileID: 8188544914562308822}
   - component: {fileID: 4466989534704506978}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 6730011563581459497}
   - component: {fileID: 4241696046030709199}
   - component: {fileID: 7471143734759597948}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 631510749495905421}
   - component: {fileID: 4277115512392395381}
   - component: {fileID: 3439765323103751688}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2560778558618020254}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BulletPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
