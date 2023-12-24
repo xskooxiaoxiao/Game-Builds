@@ -2047,8 +2047,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1157833333}
-  - component: {fileID: 1157833332}
   - component: {fileID: 1157833334}
+  - component: {fileID: 1157833335}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -2056,21 +2056,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1157833332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157833330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfe6bf00084c2bd49b9d274b153c66a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 1385744693461648289, guid: 9fee9a4acdedabc4384a7c21459adef0, type: 3}
-  enemyi: 20
-  delay: 1
 --- !u!4 &1157833333
 Transform:
   m_ObjectHideFlags: 0
@@ -2113,6 +2098,44 @@ MonoBehaviour:
   moneyText: {fileID: 0}
   moneyAnimator: {fileID: 0}
   money: 200
+--- !u!114 &1157833335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157833330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d125f603f3b67004dac37aa0e2525672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdown: 0
+  e1: {fileID: 1385744693461648289, guid: 9fee9a4acdedabc4384a7c21459adef0, type: 3}
+  e2: {fileID: 3426538988425600978, guid: 989301cef2e0c6f41a41034665036957, type: 3}
+  waves:
+  - enemies:
+    - 1
+    - 2
+    - 1
+    timeToNextEnemy: 1
+    timeToNextWave: 2
+    enemiesLeft: 0
+  - enemies:
+    - 1
+    - 2
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    timeToNextEnemy: 1
+    timeToNextWave: 2
+    enemiesLeft: 0
+  currentWaveIndex: 0
+  DeadCount: 0
+  gameEnd: 0
 --- !u!1 &1173742932
 GameObject:
   m_ObjectHideFlags: 0

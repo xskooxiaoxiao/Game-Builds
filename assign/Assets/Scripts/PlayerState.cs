@@ -19,12 +19,14 @@ public class PlayerState : MonoBehaviour
     public TextMeshProUGUI hp;
     public Image HPbar;
     
-    EnemySpawn enemySpawn;
+    //EnemySpawn enemySpawn;
+    WaveSpawner waveSpawner;
 
     void Awake()
     {
-        enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
-        enemyTotal = enemySpawn.enemyi;
+        //enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
+        //enemyTotal = enemySpawn.enemyi;
+        waveSpawner = GameObject.Find("GameControl").GetComponent<WaveSpawner>();
     }
  
     void OnEnable(){
@@ -67,7 +69,7 @@ public class PlayerState : MonoBehaviour
             lose.gameObject.SetActive(true);
             
         }
-        else if (PlayerHealth>0 && enemyTotal==0) //win state
+        else if (PlayerHealth>0 && waveSpawner.gameEnd == true) //win state
         {
             Retry.gameObject.SetActive(true);
             MainMenu.gameObject.SetActive(true);

@@ -12,12 +12,14 @@ public class Enemy : MonoBehaviour
 
     BuildManager buildManager;
     TowerPlacement towerPlacement;
+    WaveSpawner waveSpawner;
 
     void Awake()
     {
         playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
         buildManager = GameObject.Find("GameControl").GetComponent<BuildManager>();
         towerPlacement = GameObject.Find("PlayerCamera").GetComponent<TowerPlacement>();
+        waveSpawner = GameObject.Find("GameControl").GetComponent<WaveSpawner>();
     }
 
     public void TakeDamage(int damage)
@@ -33,8 +35,10 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Destroy(this.gameObject);
+        waveSpawner.DeadCount += 1;
         playerState.enemyTotal -= 1;
         buildManager.money += earn;
         towerPlacement.money += earn;
+        
     }
 }

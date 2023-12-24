@@ -8,8 +8,9 @@ public class EnemyMovement : MonoBehaviour
     // Adjust the speed for the application.
     public float speed = 5.0f; //speed
     MapSystem mapSystem;
-    EnemySpawn enemySpawn;
+    //EnemySpawn enemySpawn;
     PlayerState playerState;
+    WaveSpawner waveSpawner;
     
     // The target position.
     //private Transform target;
@@ -42,8 +43,9 @@ void Awake()
         target[2] = new Vector3(5.8f, 0.0f, 2.8f);
         */
         
-        enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
+        //enemySpawn = GameObject.Find("GameControl").GetComponent<EnemySpawn>();
         playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
+        waveSpawner = GameObject.Find("GameControl").GetComponent<WaveSpawner>();
 
         // Create a temporary reference to the current scene.
 		Scene currentScene = SceneManager.GetActiveScene ();
@@ -128,6 +130,7 @@ void Awake()
             playerState.PlayerHealth -= DamagetoPlayerHealth;
             playerState.enemyTotal -= 1;
             Debug.Log(playerState.PlayerHealth);
+            waveSpawner.DeadCount += 1;
         }
     }
 }
