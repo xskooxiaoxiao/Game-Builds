@@ -70,6 +70,27 @@ void Awake()
             
             }
 		}
+
+        else if (sceneName == "Level2") 
+		{
+            transform.position = new Vector3(-18.0f,enemyheight,21.0f);
+            pini = 7;
+            pin = new Vector3[pini];
+            pin[0] = new Vector3(-18.0f,0.0f,21.0f);
+            pin[1] = new Vector3(-18.0f,0.0f,15.0f);
+            pin[2] = new Vector3(2.0f,0.0f,15.0f);
+            pin[3] = new Vector3(2.0f,0.0f,7.0f);
+            pin[4] = new Vector3(-12.0f,0.0f,7.0f);
+            pin[5] = new Vector3(-12.0f,0.0f,3.0f);
+            pin[6] = new Vector3(-21.0f,0.0f,3.0f);
+            for (int j=0;j<pini;j++)
+            {
+            //pin[j] = mapSystem.target[j];
+            pin[j][1] = enemyheight;
+            
+            }
+		}
+
 		else if (sceneName == "LevelR")
 		{
 			mapSystem = GameObject.Find("MAP").GetComponent<MapSystem>();
