@@ -18,6 +18,7 @@ public class Projectile : MonoBehaviour {
     //public float dist;
 
     public ParticleSystem explosion;
+    public ParticleSystem explosion2;
 
     private void Start()
     {
@@ -116,6 +117,7 @@ public class Projectile : MonoBehaviour {
     public void Explosion()
     {
         Instantiate(explosion, transform.position, transform.rotation);
+        Instantiate(explosion2, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }

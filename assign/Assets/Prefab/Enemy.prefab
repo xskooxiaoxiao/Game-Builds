@@ -85,6 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 75
   earn: 20
+  EnemyDeath: {fileID: 2444002345933398879, guid: 0ccf898fdfcfc194f87da78dfae329ba, type: 3}
 --- !u!1 &6132426735844088510
 GameObject:
   m_ObjectHideFlags: 0

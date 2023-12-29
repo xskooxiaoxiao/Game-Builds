@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     TowerPlacement towerPlacement;
     WaveSpawner waveSpawner;
 
+    public ParticleSystem EnemyDeath;
+
     void Awake()
     {
         playerState = GameObject.Find("PlayerState").GetComponent<PlayerState>();
@@ -35,6 +37,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        Instantiate(EnemyDeath, transform.position, transform.rotation);
         Destroy(this.gameObject);
         waveSpawner.DeadCount += 1;
         playerState.enemyTotal -= 1;

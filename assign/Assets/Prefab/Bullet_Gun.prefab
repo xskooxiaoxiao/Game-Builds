@@ -80,7 +80,8 @@ MonoBehaviour:
   catapult: 0
   knockBack: 0
   boomTimer: 10
-  explosion: {fileID: 198049787571439516, guid: 6d074a749488789479e539251fdf184e, type: 3}
+  explosion: {fileID: 5639911283012491765, guid: bfe8f3b0aa5315f4f941a18deb7e0ed7, type: 3}
+  explosion2: {fileID: 5821092366932103006, guid: 0a2fceb30ad02d541958b0f7973a5153, type: 3}
 --- !u!114 &795677869211845334
 MonoBehaviour:
   m_ObjectHideFlags: 0

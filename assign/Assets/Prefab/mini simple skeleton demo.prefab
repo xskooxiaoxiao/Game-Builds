@@ -138,8 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bdbd72eb470d8458fe8bfe6e21465e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 130
+  hp: 1
   earn: 20
+  EnemyDeath: {fileID: 2444002345933398879, guid: 0ccf898fdfcfc194f87da78dfae329ba, type: 3}
 --- !u!114 &2446190735090363950
 MonoBehaviour:
   m_ObjectHideFlags: 0
