@@ -9,6 +9,7 @@ public class WaveSpawner : MonoBehaviour
 
     public GameObject e1; //Enemy type 1
     public GameObject e2; //Enemy type 2
+    public GameObject e3; //Enemy type 3
 
 
     public Wave[] waves;
@@ -78,6 +79,10 @@ public class WaveSpawner : MonoBehaviour
                 else if (waves[currentWaveIndex].enemies[i] == "2")
                 {
                     GameObject newObject = Instantiate(e2);
+                }
+                else if (waves[currentWaveIndex].enemies[i] == "3")
+                {
+                    GameObject newObject = Instantiate(e3);
                 }
 
 
