@@ -1026,7 +1026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 243714021}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2373,9 +2373,9 @@ GameObject:
   - component: {fileID: 448236284}
   - component: {fileID: 448236283}
   - component: {fileID: 448236282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pathpiece (2)
-  m_TagString: Cantplace
+  m_TagString: path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2477,7 +2477,7 @@ GameObject:
   - component: {fileID: 448826593}
   - component: {fileID: 448826595}
   - component: {fileID: 448826594}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2715,7 +2715,7 @@ GameObject:
   - component: {fileID: 475940609}
   m_Layer: 0
   m_Name: Path
-  m_TagString: Cantplace
+  m_TagString: path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2739,7 +2739,6 @@ Transform:
   - {fileID: 2099234476}
   - {fileID: 1064385953}
   - {fileID: 1312799960}
-  - {fileID: 615021805}
   m_Father: {fileID: 1256240214}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &488888020
@@ -2833,9 +2832,9 @@ GameObject:
   - component: {fileID: 527950047}
   - component: {fileID: 527950046}
   - component: {fileID: 527950045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pathpiece
-  m_TagString: Cantplace
+  m_TagString: path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3784,110 +3783,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9066992238348588384, guid: 44bc2e4589af17c4f8c39b6954d2e176, type: 3}
   m_PrefabInstance: {fileID: 609398381}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &615021804
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 615021805}
-  - component: {fileID: 615021808}
-  - component: {fileID: 615021807}
-  - component: {fileID: 615021806}
-  m_Layer: 0
-  m_Name: Pathpiece (5)
-  m_TagString: Cantplace
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &615021805
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615021804}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.7522, y: 0.01, z: 3.7}
-  m_LocalScale: {x: 1.5, y: 1, z: 8.231545}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 475940609}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &615021806
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615021804}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &615021807
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615021804}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials: []
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &615021808
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615021804}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &658577376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4244,9 +4139,9 @@ GameObject:
   - component: {fileID: 702370945}
   - component: {fileID: 702370944}
   - component: {fileID: 702370943}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pathpiece (1)
-  m_TagString: Cantplace
+  m_TagString: path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4689,7 +4584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 749563846}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4726,7 +4621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762177574}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HIll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5585,6 +5480,7 @@ GameObject:
   - component: {fileID: 890657328}
   - component: {fileID: 890657327}
   - component: {fileID: 890657326}
+  - component: {fileID: 890657329}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -5650,6 +5546,36 @@ Transform:
   - {fileID: 1898219906}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &890657329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890657325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12aa7e9c1042994aa389e2c127885e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerCamera: {fileID: 1898219908}
+  TG: {fileID: 2100000, guid: 4c507e082f47dc54db50aa4de495db17, type: 2}
+  TR: {fileID: 2100000, guid: 8020179c65ab5ae49bd09b8f807fb7c3, type: 2}
+  TurretData:
+    turretPrefab: {fileID: 7502852291536291600, guid: 3e97a9b27e0775346ba2e98d29394b9b, type: 3}
+    cost: 50
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  selectedTurretData:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  moneyText: {fileID: 1255433385}
+  moneyAnimator: {fileID: 1255433384}
+  money: 200
 --- !u!1 &891656434
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,7 +5772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 930895638}
   - component: {fileID: 930895639}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5971,7 +5897,7 @@ GameObject:
   - component: {fileID: 974716477}
   - component: {fileID: 974716476}
   - component: {fileID: 974716475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: CanPlace
   m_Icon: {fileID: 0}
@@ -6421,7 +6347,8 @@ GameObject:
   - component: {fileID: 1008075398}
   - component: {fileID: 1008075397}
   - component: {fileID: 1008075396}
-  m_Layer: 0
+  - component: {fileID: 1008075399}
+  m_Layer: 2
   m_Name: wall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6453,7 +6380,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6514,6 +6441,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008075394}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1008075399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008075394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1, z: 2}
+  m_Center: {x: 0, y: 1, z: -0.000000022351742}
 --- !u!1001 &1030552161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6674,9 +6622,9 @@ GameObject:
   - component: {fileID: 1064385956}
   - component: {fileID: 1064385955}
   - component: {fileID: 1064385954}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pathpiece (6)
-  m_TagString: Untagged
+  m_TagString: path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6853,7 +6801,8 @@ GameObject:
   - component: {fileID: 1081952449}
   - component: {fileID: 1081952448}
   - component: {fileID: 1081952447}
-  m_Layer: 0
+  - component: {fileID: 1081952450}
+  m_Layer: 2
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6885,7 +6834,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6946,6 +6895,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081952445}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1081952450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081952445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.99999994, z: 4}
+  m_Center: {x: -0.0000009536743, y: 1, z: 0}
 --- !u!1001 &1114606675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7320,7 +7290,7 @@ GameObject:
   - component: {fileID: 1190498571}
   - component: {fileID: 1190498570}
   - component: {fileID: 1190498569}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: hill (1)
   m_TagString: Cantplace
   m_Icon: {fileID: 0}
@@ -7336,7 +7306,7 @@ Transform:
   m_GameObject: {fileID: 1190498567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.5, y: 1.4900002, z: -8.450001}
+  m_LocalPosition: {x: 13.5, y: 1.5, z: -8.5}
   m_LocalScale: {x: 12.396126, y: 2, z: 2.3020747}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7352,7 +7322,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 132
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7362,7 +7332,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!23 &1190498570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7425,7 +7395,7 @@ GameObject:
   - component: {fileID: 1239782429}
   - component: {fileID: 1239782428}
   - component: {fileID: 1239782427}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7457,7 +7427,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7567,7 +7537,7 @@ GameObject:
   - component: {fileID: 1248366326}
   - component: {fileID: 1248366328}
   - component: {fileID: 1248366327}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7779,7 +7749,7 @@ Transform:
   m_GameObject: {fileID: 1256240213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 9.95}
+  m_LocalPosition: {x: -10, y: -0.5, z: 9.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7878,9 +7848,9 @@ GameObject:
   - component: {fileID: 1312799963}
   - component: {fileID: 1312799962}
   - component: {fileID: 1312799961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pathpiece (4)
-  m_TagString: Cantplace
+  m_TagString: path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8339,7 +8309,8 @@ GameObject:
   - component: {fileID: 1373601907}
   - component: {fileID: 1373601906}
   - component: {fileID: 1373601905}
-  m_Layer: 0
+  - component: {fileID: 1373601908}
+  m_Layer: 2
   m_Name: wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8371,7 +8342,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -8432,6 +8403,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373601903}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1373601908
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373601903}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 2}
+  m_Center: {x: 0, y: 1, z: -0.000000059604645}
 --- !u!1001 &1388762134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8666,7 +8658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500806525}
   - component: {fileID: 1500806526}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9016,7 +9008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1621466458}
   - component: {fileID: 1621466459}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9348,7 +9340,7 @@ GameObject:
   - component: {fileID: 1687040614}
   - component: {fileID: 1687040613}
   - component: {fileID: 1687040612}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9380,7 +9372,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9472,8 +9464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TurretData:
-    turretPrefab: {fileID: 662134231168498470, guid: 99adef59d02158c4592c32009de4ce12, type: 3}
-    cost: 50
+    turretPrefab: {fileID: 0}
+    cost: 0
     turretUpgradePrefab: {fileID: 0}
     costUpgrade: 0
     type: 0
@@ -9483,8 +9475,8 @@ MonoBehaviour:
     turretUpgradePrefab: {fileID: 0}
     costUpgrade: 0
     type: 0
-  moneyText: {fileID: 1255433385}
-  moneyAnimator: {fileID: 1255433384}
+  moneyText: {fileID: 0}
+  moneyAnimator: {fileID: 0}
   money: 200
 --- !u!4 &1701716364
 Transform:
@@ -9516,6 +9508,7 @@ MonoBehaviour:
   countdown: 0
   e1: {fileID: 1385744693461648289, guid: 9fee9a4acdedabc4384a7c21459adef0, type: 3}
   e2: {fileID: 3426538988425600978, guid: 989301cef2e0c6f41a41034665036957, type: 3}
+  e3: {fileID: 0}
   waves:
   - enemies:
     - 1
@@ -9885,7 +9878,7 @@ GameObject:
   - component: {fileID: 1774391179}
   - component: {fileID: 1774391178}
   - component: {fileID: 1774391177}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: hill
   m_TagString: Cantplace
   m_Icon: {fileID: 0}
@@ -9901,7 +9894,7 @@ Transform:
   m_GameObject: {fileID: 1774391175}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.5, y: 1.4899999, z: 5.0499997}
+  m_LocalPosition: {x: 17, y: 1, z: 5.5}
   m_LocalScale: {x: 4.9997997, y: 2, z: 7.9033194}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9917,7 +9910,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 132
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9927,7 +9920,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!23 &1774391178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9990,7 +9983,7 @@ GameObject:
   - component: {fileID: 1783633476}
   - component: {fileID: 1783633475}
   - component: {fileID: 1783633474}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10022,7 +10015,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -11022,7 +11015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2032483260}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: boaders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11203,9 +11196,21 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1701716362}
-        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
-        m_MethodName: OnTurretSelected
+      - m_Target: {fileID: 890657329}
+        m_TargetAssemblyTypeName: TowerPlacement, Assembly-CSharp
+        m_MethodName: SetTower
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2833690415043052996, guid: 4ba7adeefa9666240a4d55aceec6bb63, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 890657329}
+        m_TargetAssemblyTypeName: TowerPlacement, Assembly-CSharp
+        m_MethodName: unablePlaceTower
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11215,9 +11220,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 538034566}
-        m_TargetAssemblyTypeName: PlatformVis, Assembly-CSharp
-        m_MethodName: OnTurretVisible
+      - m_Target: {fileID: 890657329}
+        m_TargetAssemblyTypeName: TowerPlacement, Assembly-CSharp
+        m_MethodName: OnTurretSelected
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11430,9 +11435,9 @@ GameObject:
   - component: {fileID: 2099234479}
   - component: {fileID: 2099234478}
   - component: {fileID: 2099234477}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pathpiece (3)
-  m_TagString: Cantplace
+  m_TagString: path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11668,7 +11673,8 @@ GameObject:
   - component: {fileID: 2116424296}
   - component: {fileID: 2116424295}
   - component: {fileID: 2116424294}
-  m_Layer: 0
+  - component: {fileID: 2116424297}
+  m_Layer: 2
   m_Name: wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11700,7 +11706,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -11761,6 +11767,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116424292}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2116424297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116424292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1.2}
+  m_Center: {x: 0.00000064074993, y: 1, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -123,7 +123,7 @@ public class TowerPlacement : MonoBehaviour
         {
             Debug.Log("disable");
             Destroy(CurrentPlacingTower);
-            Destroy(GameObject.Find("turretPos(Clone)"));
+            Destroy(GameObject.Find("turretPos"));
             CurrentPlacingTower = null;
         }
         
