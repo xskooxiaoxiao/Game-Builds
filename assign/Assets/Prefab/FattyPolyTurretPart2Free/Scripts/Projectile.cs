@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour {
     public float turnSpeed = 1;
     public bool catapult;
 
-    public float knockBack = 0.1f;
+    public float knockBack = 0.0f;
     public float boomTimer = 1;
     //public Vector3 _startPosition;
     //public float dist;
@@ -102,13 +102,13 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Player")
+        if (other.transform.tag == "Enemy")
         {
             Vector3 dir = other.transform.position - transform.position;
             //Vector3 knockBackPos = other.transform.position * (-dir.normalized * knockBack);
             Vector3 knockBackPos = other.transform.position + (dir.normalized * knockBack);
             knockBackPos.y = 1;
-            other.transform.position = knockBackPos;
+            //other.transform.position = knockBackPos;
             Explosion();
         }
     }

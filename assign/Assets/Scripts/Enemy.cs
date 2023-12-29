@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     {
         if (hp <= 0) return;
         hp -= damage;
+        Debug.Log(hp);
         if (hp <= 0)
         {
             Die();

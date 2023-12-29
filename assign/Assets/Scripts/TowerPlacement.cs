@@ -12,7 +12,7 @@ public class TowerPlacement : MonoBehaviour
 
     private GameObject CurrentPlacingTower;
 
-    public GameObject PlacedTower;
+    //public GameObject PlacedTower;
 
     Vector3 inpp;
 
@@ -75,7 +75,7 @@ public class TowerPlacement : MonoBehaviour
                 //Destroy(CurrentPlacingTower);
                 //CurrentPlacingTower = null;
                 Vector3 inppp = inpp;
-                inppp[1] = -0.5f;
+                inppp[1] = 0.0f; //turret height
                 
                 
                 if (selectedTurretData != null)

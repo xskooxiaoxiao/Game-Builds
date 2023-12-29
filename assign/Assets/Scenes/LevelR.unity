@@ -2380,7 +2380,7 @@ Transform:
   m_GameObject: {fileID: 1314842751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 10, y: 3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2400,11 +2400,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCamera: {fileID: 397418958}
-  PlacedTower: {fileID: 662134231168498470, guid: 99adef59d02158c4592c32009de4ce12, type: 3}
   TG: {fileID: 2100000, guid: 4c507e082f47dc54db50aa4de495db17, type: 2}
   TR: {fileID: 2100000, guid: 8020179c65ab5ae49bd09b8f807fb7c3, type: 2}
   TurretData:
-    turretPrefab: {fileID: 662134231168498470, guid: 99adef59d02158c4592c32009de4ce12, type: 3}
+    turretPrefab: {fileID: 7502852291536291600, guid: 3e97a9b27e0775346ba2e98d29394b9b, type: 3}
     cost: 50
     turretUpgradePrefab: {fileID: 0}
     costUpgrade: 0

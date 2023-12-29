@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5417812798058003056}
   - component: {fileID: 5747156567390454032}
   - component: {fileID: -7604096324512879119}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  enemyheight: 0.5
   DamagetoPlayerHealth: 1
 --- !u!135 &5747156567390454032
 SphereCollider:
@@ -82,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bdbd72eb470d8458fe8bfe6e21465e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 140
+  hp: 75
   earn: 20
 --- !u!1 &6132426735844088510
 GameObject:
@@ -96,7 +97,7 @@ GameObject:
   - component: {fileID: 3351775834760119448}
   - component: {fileID: 4762783525553811680}
   - component: {fileID: 7437445663457016918}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
