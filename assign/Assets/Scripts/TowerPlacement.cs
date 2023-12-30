@@ -19,7 +19,8 @@ public class TowerPlacement : MonoBehaviour
     public Material TG;
     public Material TR;
 
-    public TurretData TurretData;
+    public TurretData TurretData1;
+    public TurretData TurretData2;
 
     //The Turret to build
     public TurretData selectedTurretData;
@@ -128,16 +129,43 @@ public class TowerPlacement : MonoBehaviour
         }
         
     }
+
+    public void OnTurretType(string type)
+    {
+        
+        if (type == "1")
+        {
+            selectedTurretData = TurretData1;
+        }
+        if (type == "2")
+        {
+            selectedTurretData = TurretData2;
+        }
+        
+        else
+        {
+            //selectedTurretData = null;
+        }
+    }
+
+    /*
     public void OnTurretSelected(bool isOn)
     {
         if (isOn)
         {
-            selectedTurretData = TurretData;
+            
+            
+            //selectedTurretData = TurretData;
+            
+            
         }
+        
         else
         {
             selectedTurretData = null;
         }
+        
     }
-
+    */
+    
 }
