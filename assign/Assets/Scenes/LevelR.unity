@@ -2201,7 +2201,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1157833333}
-  - component: {fileID: 1157833334}
   - component: {fileID: 1157833335}
   m_Layer: 0
   m_Name: GameControl
@@ -2225,33 +2224,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1157833334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157833330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a33d5d0f91f2f1a46b77f52a4bd804bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurretData:
-    turretPrefab: {fileID: 0}
-    cost: 0
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
-    type: 0
-  selectedTurretData:
-    turretPrefab: {fileID: 0}
-    cost: 0
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
-    type: 0
-  moneyText: {fileID: 0}
-  moneyAnimator: {fileID: 0}
-  money: 200
 --- !u!114 &1157833335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,6 +2240,7 @@ MonoBehaviour:
   e1: {fileID: 1385744693461648289, guid: 9fee9a4acdedabc4384a7c21459adef0, type: 3}
   e2: {fileID: 3738196423862883414, guid: 8c43850240c81bf41b08dd5b68c220c7, type: 3}
   e3: {fileID: 4871917864880969936, guid: bbcc50d256f23fe499229df7fa4862f9, type: 3}
+  e4: {fileID: 3193551604077187470, guid: f44919291dc1bdc439e23e88c97de39e, type: 3}
   waves:
   - enemies:
     - 1
@@ -2285,6 +2258,11 @@ MonoBehaviour:
     - 3
     - 1
     - 3
+    timeToNextEnemy: 1
+    timeToNextWave: 2
+    enemiesLeft: 0
+  - enemies:
+    - 4
     timeToNextEnemy: 1
     timeToNextWave: 2
     enemiesLeft: 0
@@ -3322,6 +3300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: []
   pathcube: {fileID: 5923648313701113158, guid: 5c2e36761d030cf41a5cd428f13210fc, type: 3}
+  walll: {fileID: 7436987265718601408, guid: ae3a451f537dc8540b61a88a278e1cb7, type: 3}
   targeti: 8
   mapscale: 26
 --- !u!154 &1606889260

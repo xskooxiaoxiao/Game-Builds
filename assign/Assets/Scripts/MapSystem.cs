@@ -10,6 +10,7 @@ public class MapSystem : MonoBehaviour
     GameObject[] pinCylinder; //pinpoint reference
     GameObject[] pave; //path
     public GameObject pathcube;
+    public GameObject walll;
     GameObject[] wall; //wall
     public int targeti = 4; //number of pinpoint
     public float mapscale = 26.0f;// scale of the map
@@ -79,8 +80,8 @@ public class MapSystem : MonoBehaviour
 
         for (int m=0; m<4; m++) //Spawn Wall
         {
-            wall[m] = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            
+            //wall[m] = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            wall[m] = GameObject.Instantiate(walll);
         }
 
         wall[0].transform.localScale = new Vector3(mapscale-1, 1.0f, 1.0f);
