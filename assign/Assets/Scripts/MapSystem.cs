@@ -89,10 +89,10 @@ public class MapSystem : MonoBehaviour
         wall[2].transform.localScale = new Vector3(1.0f, 1.0f, mapscale-1);
         wall[3].transform.localScale = new Vector3(1.0f, 1.0f, mapscale-1);
 
-        wall[0].transform.position = new Vector3(mapscale/2, 0.0f, 0.0f);
-        wall[1].transform.position = new Vector3(mapscale/2, 0.0f, mapscale);
-        wall[2].transform.position = new Vector3(0.0f, 0.0f, mapscale/2);
-        wall[3].transform.position = new Vector3(mapscale, 0.0f, mapscale/2);
+        wall[0].transform.position = new Vector3(mapscale/2, 0.51f, 0.0f);
+        wall[1].transform.position = new Vector3(mapscale/2, 0.51f, mapscale);
+        wall[2].transform.position = new Vector3(0.0f, 0.51f, mapscale/2);
+        wall[3].transform.position = new Vector3(mapscale, 0.51f, mapscale/2);
         //
 
         

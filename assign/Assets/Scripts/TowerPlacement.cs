@@ -71,7 +71,12 @@ public class TowerPlacement : MonoBehaviour
                 */
             }
 
-            if (Input.GetMouseButtonDown(0) && !Physics.Raycast(CurrentPlacingTower.transform.position, CurrentPlacingTower.transform.up*-1.0f , out RaycastHit hit, 3f, LayerMask.GetMask("path")) && !Physics.Raycast(CurrentPlacingTower.transform.position, CurrentPlacingTower.transform.up , out RaycastHit hit2, 3f, LayerMask.GetMask("Ignore Raycast")) && !(EventSystem.current.IsPointerOverGameObject()))
+            if (Input.GetMouseButtonDown(0) && 
+                !Physics.Raycast(CurrentPlacingTower.transform.position, CurrentPlacingTower.transform.up*-1.0f , out RaycastHit hit, 3f, LayerMask.GetMask("path")) && 
+                !Physics.Raycast(CurrentPlacingTower.transform.position, CurrentPlacingTower.transform.up , out RaycastHit hit2, 3f, LayerMask.GetMask("Ignore Raycast")) && 
+                !Physics.Raycast(CurrentPlacingTower.transform.position, CurrentPlacingTower.transform.up*1.0f , out RaycastHit hit3, 3f, LayerMask.GetMask("barrier")) && 
+                !Physics.Raycast(CurrentPlacingTower.transform.position, CurrentPlacingTower.transform.up*-1.0f , out RaycastHit hit4, 3f, LayerMask.GetMask("barrier")) && 
+                !(EventSystem.current.IsPointerOverGameObject()))
             {
                 //Destroy(CurrentPlacingTower);
                 //CurrentPlacingTower = null;
@@ -124,7 +129,7 @@ public class TowerPlacement : MonoBehaviour
         {
             Debug.Log("disable");
             Destroy(CurrentPlacingTower);
-            Destroy(GameObject.Find("turretPos"));
+            Destroy(GameObject.Find("turretPos(Clone)"));
             CurrentPlacingTower = null;
         }
         
