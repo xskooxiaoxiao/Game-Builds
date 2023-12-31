@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour
         Destroy(this.gameObject);
         waveSpawner.DeadCount += 1;
         playerState.enemyTotal -= 1;
-        buildManager.money += earn;
+        //buildManager.money += earn;
         towerPlacement.money += earn;
         
     }

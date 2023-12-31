@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using TMPro;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class WaveSpawner : MonoBehaviour
     public GameObject e3; //Enemy type 3
     public GameObject e4; //Enemy type 4
 
+    public float startcountdown = 3.0f;
+    private int start=0;
+
 
     public Wave[] waves;
     public int currentWaveIndex = 0;
@@ -21,6 +25,8 @@ public class WaveSpawner : MonoBehaviour
     public bool gameEnd = false;
 
     private bool readyToCountDown;
+
+    
 
 
     
@@ -37,7 +43,18 @@ public class WaveSpawner : MonoBehaviour
     }
     private void Update()
     {
-        if (currentWaveIndex >= waves.Length)
+        if (start == 0)
+        {
+            startcountdown -= Time.deltaTime;
+            if (startcountdown < 0.0f)
+            {
+                start = 1;
+            }
+            
+        }
+        else
+        {
+            if (currentWaveIndex >= waves.Length)
         {
             //Debug.Log("You survived every wave!");
             gameEnd = true;
@@ -65,6 +82,8 @@ public class WaveSpawner : MonoBehaviour
             currentWaveIndex++;
             
         }
+        }
+        
         
     }
     private IEnumerator SpawnWave()

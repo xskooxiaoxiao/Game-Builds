@@ -2241,6 +2241,7 @@ MonoBehaviour:
   e2: {fileID: 3738196423862883414, guid: 8c43850240c81bf41b08dd5b68c220c7, type: 3}
   e3: {fileID: 4871917864880969936, guid: bbcc50d256f23fe499229df7fa4862f9, type: 3}
   e4: {fileID: 3193551604077187470, guid: f44919291dc1bdc439e23e88c97de39e, type: 3}
+  startcountdown: 6
   waves:
   - enemies:
     - 1
@@ -4294,7 +4295,7 @@ SceneRoots:
   - {fileID: 1120335480}
   - {fileID: 1606889262}
   - {fileID: 1314842754}
-  - {fileID: 1861651304}
-  - {fileID: 1157833333}
   - {fileID: 2033406026}
   - {fileID: 1113672901}
+  - {fileID: 1157833333}
+  - {fileID: 1861651304}
