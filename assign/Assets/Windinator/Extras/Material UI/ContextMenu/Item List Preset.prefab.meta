@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d51d1c5327f637642891a7f2d8b706f4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/ContextMenu/Item List Preset.prefab
+  uploadId: 531718

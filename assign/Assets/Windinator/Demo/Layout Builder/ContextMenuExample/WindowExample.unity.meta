@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e3712341dba4137428fe36b860b5d4ae
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Demo/Layout Builder/ContextMenuExample/WindowExample.unity
+  uploadId: 531718

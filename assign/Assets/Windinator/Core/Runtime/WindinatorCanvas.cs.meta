@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1739d8a9557f35d4aafdc3923bc0cc19
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Core/Runtime/WindinatorCanvas.cs
+  uploadId: 531718

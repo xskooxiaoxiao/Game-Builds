@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 054b0d162caa5d049baf2ed3b9781726
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Demo/Windinator.Examples.asmdef
+  uploadId: 531718

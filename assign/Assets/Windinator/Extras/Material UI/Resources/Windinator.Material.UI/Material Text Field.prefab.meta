@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 43229b979e39b2449b890c45b31a2c04
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/Resources/Windinator.Material.UI/Material
+    Text Field.prefab
+  uploadId: 531718

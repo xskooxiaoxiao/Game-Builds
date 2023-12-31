@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 33daea193fb3fdf4d97734b18c54903b
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Core/Runtime/UIExtension/Resources/Windinator.SDF/shared.cginc
+  uploadId: 531718

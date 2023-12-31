@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 133dc89a3a0434045a0cfc47af877fcb
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Core/Runtime/UIExtension/Resources/Windinator.SDF/PolygonRenderer.shader
+  uploadId: 531718

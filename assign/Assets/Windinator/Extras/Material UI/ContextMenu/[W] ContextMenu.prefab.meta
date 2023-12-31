@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c4dc2fa575f98f746b17637cca1e1c64
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/ContextMenu/[W] ContextMenu.prefab
+  uploadId: 531718

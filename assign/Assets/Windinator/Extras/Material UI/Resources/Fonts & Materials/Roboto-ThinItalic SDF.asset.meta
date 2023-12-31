@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d983af5e248d1ad478b54d5c18ba265a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/Resources/Fonts & Materials/Roboto-ThinItalic
+    SDF.asset
+  uploadId: 531718

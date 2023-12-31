@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d3a30957fbf32264dae2bc0b80c4a278
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Demo/ComplexShapes/Crosshairs/DynamicCrosshair.cs
+  uploadId: 531718

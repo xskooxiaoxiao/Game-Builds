@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bba0589c717d2db4aa880579eaea1b55
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Core/Runtime/WindinatorBehaviour.cs
+  uploadId: 531718

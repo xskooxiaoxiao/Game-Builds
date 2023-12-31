@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 83411b8970a86714993c200df7db76ba
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/MaterialKeyButton.cs
+  uploadId: 531718

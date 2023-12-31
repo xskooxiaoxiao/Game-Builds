@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6285f0c4cfcff30428b7b83274271364
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/Resources/Fonts & Materials/mdi
+    Atlas.asset
+  uploadId: 531718

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 135ac4038a38a1143a2a8d2603c1ea0e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/Sounds/Libraries/Forward.asset
+  uploadId: 531718

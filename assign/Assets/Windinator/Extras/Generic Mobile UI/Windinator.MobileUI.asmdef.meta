@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3c9067bec46a14d4c8f8f280c5c4fd18
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Generic Mobile UI/Windinator.MobileUI.asmdef
+  uploadId: 531718

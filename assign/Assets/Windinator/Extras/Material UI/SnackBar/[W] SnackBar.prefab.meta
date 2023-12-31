@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 499b2f8d3684bd64dbeaabf18e78831b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/SnackBar/[W] SnackBar.prefab
+  uploadId: 531718

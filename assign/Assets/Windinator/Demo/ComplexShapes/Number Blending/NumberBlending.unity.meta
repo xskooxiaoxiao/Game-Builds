@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 17be6431f0bc3604ba57896fd0c43d15
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Demo/ComplexShapes/Number Blending/NumberBlending.unity
+  uploadId: 531718

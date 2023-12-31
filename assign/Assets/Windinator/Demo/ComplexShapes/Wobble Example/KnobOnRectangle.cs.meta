@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0f317fb163a847140a2e2d8f8741adf4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Demo/ComplexShapes/Wobble Example/KnobOnRectangle.cs
+  uploadId: 531718

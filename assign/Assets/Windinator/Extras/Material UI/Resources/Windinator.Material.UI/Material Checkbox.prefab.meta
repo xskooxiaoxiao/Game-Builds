@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e38f5011ecd4e3b40bc1fad72da4d901
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/Resources/Windinator.Material.UI/Material
+    Checkbox.prefab
+  uploadId: 531718

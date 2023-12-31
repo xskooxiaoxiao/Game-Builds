@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ea735c83c61db8c43b50df2d3d825733
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Resources/Windinator.Presets/Scroll View.prefab
+  uploadId: 531718

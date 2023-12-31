@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 162ec3e5c7c6d7f4884370f3b9443dce
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Generic Mobile UI/Scripts/Component Scripts/ToonPopUp.cs
+  uploadId: 531718

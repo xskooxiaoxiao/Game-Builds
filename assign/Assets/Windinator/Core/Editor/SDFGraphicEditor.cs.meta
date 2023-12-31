@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 03079052c8dbee74992a358e768f4b00
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Core/Editor/SDFGraphicEditor.cs
+  uploadId: 531718

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f3441cb3e268eb14e9a54c21b2b4b08d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/Resources/Windinator.Material.UI/Material
+    Key Button.prefab
+  uploadId: 531718

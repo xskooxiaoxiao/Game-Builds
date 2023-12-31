@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9cbdca7e46be7cf4b8b51f02df14646c
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 220506
+  packageName: Windinator
+  packageVersion: 2.2.2
+  assetPath: Assets/Windinator/Extras/Material UI/Windinator.Material.asmdef
+  uploadId: 531718
