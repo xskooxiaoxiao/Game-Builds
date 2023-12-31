@@ -4973,7 +4973,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 1
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
@@ -10514,6 +10514,7 @@ MonoBehaviour:
   enemyTotal: 0
   Retry: {fileID: 1726416057}
   MainMenu: {fileID: 1215071828}
+  Pause: {fileID: 1020041754}
   lose: {fileID: 696141803}
   win: {fileID: 1368694281}
   hp: {fileID: 773887996}

@@ -5824,6 +5824,7 @@ MonoBehaviour:
   enemyTotal: 0
   Retry: {fileID: 248015592}
   MainMenu: {fileID: 2021081665}
+  Pause: {fileID: 717198523}
   lose: {fileID: 888284959}
   win: {fileID: 77913956}
   hp: {fileID: 567008905}
@@ -9639,9 +9640,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdown: 0
   e1: {fileID: 1385744693461648289, guid: 9fee9a4acdedabc4384a7c21459adef0, type: 3}
-  e2: {fileID: 3426538988425600978, guid: 989301cef2e0c6f41a41034665036957, type: 3}
-  e3: {fileID: 0}
-  e4: {fileID: 0}
+  e2: {fileID: 3738196423862883414, guid: 8c43850240c81bf41b08dd5b68c220c7, type: 3}
+  e3: {fileID: 4871917864880969936, guid: bbcc50d256f23fe499229df7fa4862f9, type: 3}
+  e4: {fileID: 3193551604077187470, guid: f44919291dc1bdc439e23e88c97de39e, type: 3}
+  startcountdown: 3
   waves:
   - enemies:
     - 1

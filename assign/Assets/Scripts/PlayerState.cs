@@ -11,6 +11,7 @@ public class PlayerState : MonoBehaviour
 
     public Button Retry;
     public Button MainMenu;
+    public Button Pause;
     public TextMeshProUGUI lose;
     public TextMeshProUGUI win;
     public TextMeshProUGUI hp;
@@ -82,6 +83,7 @@ public class PlayerState : MonoBehaviour
         Retry.gameObject.SetActive(true);
         MainMenu.gameObject.SetActive(true);
         lose.gameObject.SetActive(true);
+        Pause.gameObject.SetActive(false);
         yield return null; // Add any additional delay or transition effects here
     }
 
@@ -90,6 +92,7 @@ public class PlayerState : MonoBehaviour
         Retry.gameObject.SetActive(true);
         MainMenu.gameObject.SetActive(true);
         win.gameObject.SetActive(true);
+        Pause.gameObject.SetActive(false);
         yield return null; // Add any additional delay or transition effects here
     }
 }

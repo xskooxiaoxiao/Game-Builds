@@ -3820,6 +3820,7 @@ MonoBehaviour:
   enemyTotal: 0
   Retry: {fileID: 1406206181}
   MainMenu: {fileID: 585689809}
+  Pause: {fileID: 1050845220}
   lose: {fileID: 1938566848}
   win: {fileID: 276519999}
   hp: {fileID: 1047292336}
