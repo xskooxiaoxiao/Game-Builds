@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelR.unity
     guid: 2347e937a6240354db40704bf9cfa467
+  - enabled: 1
+    path: Assets/Scenes/RandomParameter.unity
+    guid: e0ea88e7d0819764ca9158c262338b52
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
