@@ -21,6 +21,7 @@ public class TowerPlacement : MonoBehaviour
 
     public TurretData TurretData1;
     public TurretData TurretData2;
+    public TurretData TurretData3;
 
     //The Turret to build
     public TurretData selectedTurretData;
@@ -145,6 +146,10 @@ public class TowerPlacement : MonoBehaviour
         if (type == "2")
         {
             selectedTurretData = TurretData2;
+        }
+        if (type == "3")
+        {
+            selectedTurretData = TurretData3;
         }
         
         else
