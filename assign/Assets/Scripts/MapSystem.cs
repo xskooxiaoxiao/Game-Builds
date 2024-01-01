@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,8 @@ public class MapSystem : MonoBehaviour
     GameObject[] wall; //wall
     public int targeti = 4; //number of pinpoint
     public float mapscale = 26.0f;// scale of the map
-
+    mapData mData;
+    string saveFilePath;
     
 
 /*
@@ -28,6 +30,15 @@ public class MapSystem : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        //receive parameter from RandomParameter.scene
+        mData = new mapData();
+        saveFilePath = Application.persistentDataPath + "/mData.json";
+        string loadmData = File.ReadAllText(saveFilePath);
+        mData = JsonUtility.FromJson<mapData>(loadmData);
+        targeti = mData.wa;
+        mapscale = mData.ma;
+
+
         target = new Vector3[targeti];
         pinCylinder = new GameObject[targeti];
         pave = new GameObject[targeti-1];
