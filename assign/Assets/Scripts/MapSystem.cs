@@ -143,7 +143,7 @@ public class MapSystem : MonoBehaviour
         //p2-pfinal(targeti-1)
         for (int j=2;j<targeti;j++)
         {
-            Debug.Log(targeti);
+            //Debug.Log(targeti);
             int thisp = Random.Range(1,4);
             if (lastp == 1)
             {
