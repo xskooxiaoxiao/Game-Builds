@@ -38,6 +38,9 @@ public class MapSystem : MonoBehaviour
         targeti = mData.wa;
         mapscale = mData.ma;
 
+        gameObject.transform.position = new Vector3(mapscale/2, 0.0f, mapscale/2);
+        gameObject.transform.localScale = new Vector3(mapscale/10, 1, mapscale/10);
+
 
         target = new Vector3[targeti];
         pinCylinder = new GameObject[targeti];
