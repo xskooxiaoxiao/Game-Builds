@@ -1,14 +1,5 @@
 fileFormatVersion: 2
 guid: c02d99ed6d2ff5f4da31f151e897a3e7
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
   productId: 159989
@@ -16,3 +7,20 @@ AssetOrigin:
   packageVersion: 1.0
   assetPath: Assets/FattyPolyTurretPart2Free/Scripts/TurretAI.cs
   uploadId: 344828
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentTarget: {instanceID: 0}
+  - turreyHead: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - muzzleMain: {instanceID: 0}
+  - muzzleSub: {instanceID: 0}
+  - muzzleEff: {instanceID: 0}
+  - bullet: {instanceID: 0}
+  - fireSound: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

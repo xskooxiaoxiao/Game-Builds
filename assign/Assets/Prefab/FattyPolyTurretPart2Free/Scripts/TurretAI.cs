@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretAI : MonoBehaviour {
+public class TurretAI : MonoBehaviour
+{
 
     public enum TurretType
     {
@@ -10,7 +11,7 @@ public class TurretAI : MonoBehaviour {
         Dual = 2,
         Catapult = 3,
     }
-    
+
     public GameObject currentTarget;
     public Transform turreyHead;
 
@@ -20,13 +21,12 @@ public class TurretAI : MonoBehaviour {
     private float timer;
     public float loockSpeed;
 
-    //public Quaternion randomRot;
     public Vector3 randomRot;
     public Animator animator;
 
     [Header("[Turret Type]")]
     public TurretType turretType = TurretType.Single;
-    
+
     public Transform muzzleMain;
     public Transform muzzleSub;
     public GameObject muzzleEff;
@@ -35,11 +35,11 @@ public class TurretAI : MonoBehaviour {
 
     private Transform lockOnPos;
 
-    //public TurretShoot_Base shotScript;
+    public AudioClip fireSound; // New variable for the firing sound
 
-    void Start () {
+    void Start()
+    {
         InvokeRepeating("ChackForTarget", 0, 0.5f);
-        //shotScript = GetComponent<TurretShoot_Base>();
 
         if (transform.GetChild(0).GetComponent<Animator>())
         {
@@ -48,8 +48,9 @@ public class TurretAI : MonoBehaviour {
 
         randomRot = new Vector3(0, Random.Range(0, 359), 0);
     }
-	
-	void Update () {
+
+    void Update()
+    {
         if (currentTarget != null)
         {
             FollowTarget();
@@ -71,19 +72,21 @@ public class TurretAI : MonoBehaviour {
             if (currentTarget != null)
             {
                 timer = 0;
-                
+
                 if (animator != null)
                 {
                     animator.SetTrigger("Fire");
+                    PlayFireSound(); // Play sound when firing
                     ShootTrigger();
                 }
                 else
                 {
+                    PlayFireSound(); // Play sound when firing
                     ShootTrigger();
                 }
             }
         }
-	}
+    }
 
     private void ChackForTarget()
     {
@@ -104,11 +107,11 @@ public class TurretAI : MonoBehaviour {
         }
     }
 
-    private void FollowTarget() //todo : smooth rotate
+    private void FollowTarget()
     {
         Vector3 targetDir = currentTarget.transform.position - turreyHead.position;
         targetDir.y = 0;
-        //turreyHead.forward = targetDir;
+
         if (turretType == TurretType.Single)
         {
             turreyHead.forward = targetDir;
@@ -121,14 +124,12 @@ public class TurretAI : MonoBehaviour {
 
     private void ShootTrigger()
     {
-        //shotScript.Shoot(currentTarget);
         Shoot(currentTarget);
-        //Debug.Log("We shoot some stuff!");
     }
-    
-    Vector3 CalculateVelocity(Vector3 target, Vector3 origen, float time)
+
+    Vector3 CalculateVelocity(Vector3 target, Vector3 origin, float time)
     {
-        Vector3 distance = target - origen;
+        Vector3 distance = target - origin;
         Vector3 distanceXZ = distance;
         distanceXZ.y = 0;
 
@@ -154,7 +155,7 @@ public class TurretAI : MonoBehaviour {
     public void IdleRitate()
     {
         bool refreshRandom = false;
-        
+
         if (turreyHead.rotation != Quaternion.Euler(randomRot))
         {
             turreyHead.rotation = Quaternion.RotateTowards(turreyHead.transform.rotation, Quaternion.Euler(randomRot), loockSpeed * Time.deltaTime * 0.2f);
@@ -165,7 +166,6 @@ public class TurretAI : MonoBehaviour {
 
             if (refreshRandom)
             {
-
                 int randomAngle = Random.Range(0, 359);
                 randomRot = new Vector3(0, randomAngle, 0);
                 refreshRandom = false;
@@ -180,24 +180,24 @@ public class TurretAI : MonoBehaviour {
             lockOnPos = go.transform;
 
             Instantiate(muzzleEff, muzzleMain.transform.position, muzzleMain.rotation);
-            GameObject missleGo = Instantiate(bullet, muzzleMain.transform.position, muzzleMain.rotation);
-            Projectile projectile = missleGo.GetComponent<Projectile>();
+            GameObject missileGo = Instantiate(bullet, muzzleMain.transform.position, muzzleMain.rotation);
+            Projectile projectile = missileGo.GetComponent<Projectile>();
             projectile.target = lockOnPos;
         }
-        else if(turretType == TurretType.Dual)
+        else if (turretType == TurretType.Dual)
         {
             if (shootLeft)
             {
                 Instantiate(muzzleEff, muzzleMain.transform.position, muzzleMain.rotation);
-                GameObject missleGo = Instantiate(bullet, muzzleMain.transform.position, muzzleMain.rotation);
-                Projectile projectile = missleGo.GetComponent<Projectile>();
+                GameObject missileGo = Instantiate(bullet, muzzleMain.transform.position, muzzleMain.rotation);
+                Projectile projectile = missileGo.GetComponent<Projectile>();
                 projectile.target = transform.GetComponent<TurretAI>().currentTarget.transform;
             }
             else
             {
                 Instantiate(muzzleEff, muzzleSub.transform.position, muzzleSub.rotation);
-                GameObject missleGo = Instantiate(bullet, muzzleSub.transform.position, muzzleSub.rotation);
-                Projectile projectile = missleGo.GetComponent<Projectile>();
+                GameObject missileGo = Instantiate(bullet, muzzleSub.transform.position, muzzleSub.rotation);
+                Projectile projectile = missileGo.GetComponent<Projectile>();
                 projectile.target = transform.GetComponent<TurretAI>().currentTarget.transform;
             }
 
@@ -206,9 +206,24 @@ public class TurretAI : MonoBehaviour {
         else
         {
             Instantiate(muzzleEff, muzzleMain.transform.position, muzzleMain.rotation);
-            GameObject missleGo = Instantiate(bullet, muzzleMain.transform.position, muzzleMain.rotation);
-            Projectile projectile = missleGo.GetComponent<Projectile>();
+            GameObject missileGo = Instantiate(bullet, muzzleMain.transform.position, muzzleMain.rotation);
+            Projectile projectile = missileGo.GetComponent<Projectile>();
             projectile.target = currentTarget.transform;
+        }
+
+        PlayFireSound(); // Play sound when shooting
+    }
+
+    private void PlayFireSound()
+    {
+        if (fireSound != null)
+        {
+            if (GetComponent<AudioSource>() != null)
+            {
+                GetComponent<AudioSource>().PlayOneShot(fireSound);
+            }
+            // If you want to use a separate audio source, uncomment the following line
+            //AudioSource.PlayClipAtPoint(fireSound, transform.position);
         }
     }
 }
