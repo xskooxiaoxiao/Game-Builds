@@ -73,8 +73,8 @@ MonoBehaviour:
   type: 1
   target: {fileID: 0}
   lockOn: 0
-  speed: 5
-  turnSpeed: 4
+  speed: 6
+  turnSpeed: 2
   catapult: 0
   knockBack: 1.5
   boomTimer: 10

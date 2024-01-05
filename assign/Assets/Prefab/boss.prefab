@@ -394,8 +394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bdbd72eb470d8458fe8bfe6e21465e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 300
-  earn: 30
+  hp: 600
+  earn: 50
   EnemyDeath: {fileID: 8751721073250465154, guid: a97e27c94995a6a4db6c224e50b80d80, type: 3}
 --- !u!114 &8846381547347255252
 MonoBehaviour:
