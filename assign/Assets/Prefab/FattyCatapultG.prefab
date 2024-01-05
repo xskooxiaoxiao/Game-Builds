@@ -9862,7 +9862,7 @@ MonoBehaviour:
   loockSpeed: 100
   randomRot: {x: 0, y: 0, z: 0}
   animator: {fileID: 0}
-  turretType: 1
+  turretType: 3
   muzzleMain: {fileID: 1577607567338950556}
   muzzleSub: {fileID: 0}
   muzzleEff: {fileID: 1497772684437746, guid: bd75ef4ae186f454a90b2de71bed2854, type: 3}
