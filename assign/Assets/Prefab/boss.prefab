@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 300
-  earn: 20
+  earn: 30
   EnemyDeath: {fileID: 8751721073250465154, guid: a97e27c94995a6a4db6c224e50b80d80, type: 3}
 --- !u!114 &8846381547347255252
 MonoBehaviour:
@@ -409,9 +409,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f602cb6e4fc07418c98096c2ba349d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1.5
   enemyheight: 0.1
-  DamagetoPlayerHealth: 1
+  DamagetoPlayerHealth: 4
 --- !u!136 &6733391241205730732
 CapsuleCollider:
   m_ObjectHideFlags: 0

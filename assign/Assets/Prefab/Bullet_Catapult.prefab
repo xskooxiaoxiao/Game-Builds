@@ -70,12 +70,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66749fef3309f654791e063c70ce1ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 3
+  type: 1
   target: {fileID: 0}
   lockOn: 0
-  speed: 10
-  turnSpeed: 1
-  catapult: 1
+  speed: 5
+  turnSpeed: 4
+  catapult: 0
   knockBack: 1.5
   boomTimer: 10
   explosion: {fileID: 5639911283012491765, guid: bfe8f3b0aa5315f4f941a18deb7e0ed7, type: 3}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447c11b135ba4f340be1fa95d981e737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 30
 --- !u!54 &1225980369553461215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,8 +115,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

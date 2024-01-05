@@ -9857,12 +9857,12 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   turreyHead: {fileID: 2450682120283057314}
   attackDist: 10
-  attackDamage: 10
-  shootCoolDown: 1
+  attackDamage: 30
+  shootCoolDown: 1.5
   loockSpeed: 100
   randomRot: {x: 0, y: 0, z: 0}
   animator: {fileID: 0}
-  turretType: 3
+  turretType: 1
   muzzleMain: {fileID: 1577607567338950556}
   muzzleSub: {fileID: 0}
   muzzleEff: {fileID: 1497772684437746, guid: bd75ef4ae186f454a90b2de71bed2854, type: 3}

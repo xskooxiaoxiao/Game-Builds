@@ -20,6 +20,11 @@ public class Projectile : MonoBehaviour {
     public ParticleSystem explosion;
     public ParticleSystem explosion2;
 
+    public void SetTarget(Transform _target)
+    {
+        this.target = _target;
+    }
+
     private void Start()
     {
         if (catapult)
@@ -59,6 +64,8 @@ public class Projectile : MonoBehaviour {
             {
                 Vector3 Vo = CalculateCatapult(target.transform.position, transform.position, 1);
 
+                transform.LookAt(target.position);
+                transform.Translate(Vector3.forward * Time.deltaTime * speed);
                 transform.GetComponent<Rigidbody>().velocity = Vo;
                 lockOn = false;
             }
@@ -77,8 +84,10 @@ public class Projectile : MonoBehaviour {
 
         }else if (type == TurretAI.TurretType.Single)
         {
-            float singleSpeed = speed * Time.deltaTime;
-            transform.Translate(transform.forward * singleSpeed * 2, Space.World);
+            //float singleSpeed = speed * Time.deltaTime;
+            //transform.Translate(transform.forward * singleSpeed * 2, Space.World);
+            transform.LookAt(target.position);
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
     }
 
