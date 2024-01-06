@@ -11708,7 +11708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c24c58e8402f73349bf852d1bba94660, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d42f32554af71842ae8b427aa88b45b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13249,21 +13249,21 @@ MonoBehaviour:
   TurretData1:
     turretPrefab: {fileID: 7502852291536291600, guid: 3e97a9b27e0775346ba2e98d29394b9b, type: 3}
     cost: 50
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
+    turretUpgradePrefab: {fileID: 7502852291536291600, guid: e89f95492282262459ecd1b3d46d02f9, type: 3}
+    costUpgrade: 20
     type: 0
   TurretData2:
     turretPrefab: {fileID: 5332143974145561832, guid: c0d7bd5b84954ca4fbd4b842e42960b1, type: 3}
     cost: 80
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
-    type: 0
+    turretUpgradePrefab: {fileID: 5332143974145561832, guid: 07cad02ced4b488448e5b875ce2d28ad, type: 3}
+    costUpgrade: 50
+    type: 1
   TurretData3:
     turretPrefab: {fileID: 5026349570910146776, guid: ce4bdc150002867449919509d4e99b90, type: 3}
     cost: 100
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
-    type: 0
+    turretUpgradePrefab: {fileID: 5026349570910146776, guid: 08441b2a285e716459ca281fd6f8bbef, type: 3}
+    costUpgrade: 70
+    type: 2
   selectedTurretData:
     turretPrefab: {fileID: 0}
     cost: 0
@@ -22196,6 +22196,8 @@ MonoBehaviour:
   win: {fileID: 996255489}
   hp: {fileID: 1296754492}
   HPbar: {fileID: 0}
+  losemenu: {fileID: 0}
+  winmenu: {fileID: 0}
 --- !u!4 &1953503625
 Transform:
   m_ObjectHideFlags: 0
@@ -22242,6 +22244,9 @@ MonoBehaviour:
     costUpgrade: 0
     type: 0
   isUpgrated: 0
+  moneyText: {fileID: 0}
+  moneyAnimator: {fileID: 0}
+  money: 0
 --- !u!1 &1956873290
 GameObject:
   m_ObjectHideFlags: 0
