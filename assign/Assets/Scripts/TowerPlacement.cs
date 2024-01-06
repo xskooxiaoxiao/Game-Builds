@@ -27,13 +27,14 @@ public class TowerPlacement : MonoBehaviour
     public TurretData selectedTurretData;
     public Text moneyText;
     public Animator moneyAnimator;
+
     public Boolean isUpgrated;
-    public int money = 200;   
+    public int money = 200;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        money = 200;
     }
 
     void ChangeMoney(int change = 0)
@@ -45,6 +46,8 @@ public class TowerPlacement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpgradeLookat upgradeLookat = FindFirstObjectByType<UpgradeLookat>();
+        money = upgradeLookat.money;
         moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)
         {
