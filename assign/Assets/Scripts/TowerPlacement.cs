@@ -48,6 +48,7 @@ public class TowerPlacement : MonoBehaviour
     {
         UpgradeLookat upgradeLookat = FindFirstObjectByType<UpgradeLookat>();
         money = upgradeLookat.money;
+
         moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)
         {
