@@ -3054,6 +3054,7 @@ MonoBehaviour:
     type: 0
   moneyText: {fileID: 735655611}
   moneyAnimator: {fileID: 735655610}
+  isUpgrated: 0
   money: 200
 --- !u!4 &703771553
 Transform:
@@ -8434,9 +8435,16 @@ MonoBehaviour:
   startcountdown: 3
   waves:
   - enemies:
-    - 1
-    - 1
-    - 1
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
     timeToNextEnemy: 1
     timeToNextWave: 2
     enemiesLeft: 0
@@ -17848,6 +17856,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810f2eefa38016147adefa2d66fc78e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TurretData1:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  TurretData2:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  TurretData3:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  isUpgrated: 0
 --- !u!1 &1868861676
 GameObject:
   m_ObjectHideFlags: 0

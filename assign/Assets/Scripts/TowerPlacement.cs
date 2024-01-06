@@ -45,10 +45,10 @@ public class TowerPlacement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)
         {
-            moneyText.text = "$" + money;
+            
             Ray camray = PlayerCamera.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(camray.origin, camray.direction * 10, Color.yellow);
             if (Physics.Raycast(camray, out RaycastHit hitInfo, 100f))

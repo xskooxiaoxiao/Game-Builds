@@ -9970,12 +9970,6 @@ MonoBehaviour:
     turretUpgradePrefab: {fileID: 0}
     costUpgrade: 0
     type: 0
-  selectedTurretData:
-    turretPrefab: {fileID: 5026349570910146776, guid: ce4bdc150002867449919509d4e99b90, type: 3}
-    cost: 0
-    turretUpgradePrefab: {fileID: 5026349570910146776, guid: 08441b2a285e716459ca281fd6f8bbef, type: 3}
-    costUpgrade: 0
-    type: 0
   isUpgrated: 0
 --- !u!1 &5332143974145561832
 GameObject:
