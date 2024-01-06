@@ -12,6 +12,7 @@ public class MapSystem : MonoBehaviour
     GameObject[] pave; //path
     public GameObject pathcube;
     public GameObject walll;
+    public GameObject roof;
     GameObject[] wall; //wall
     public int targeti = 4; //number of pinpoint
     public float mapscale = 26.0f;// scale of the map
@@ -38,8 +39,14 @@ public class MapSystem : MonoBehaviour
         targeti = mData.wa;
         mapscale = mData.ma;
 
+        //map base transform
         gameObject.transform.position = new Vector3(mapscale/2, 0.0f, mapscale/2);
         gameObject.transform.localScale = new Vector3(mapscale/10, 1, mapscale/10);
+
+        //spawn roof barrier
+        GameObject.Instantiate(roof);
+        roof.transform.position = new Vector3(mapscale/2, 40.0f, mapscale/2);
+        roof.transform.localScale = new Vector3(mapscale, 1, mapscale);
 
 
         target = new Vector3[targeti];
