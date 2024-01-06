@@ -457,7 +457,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1099551378441297033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9177136545082413181}
+        m_TargetAssemblyTypeName: UpgradeLookat, Assembly-CSharp
+        m_MethodName: UpgrateTurret3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9177136545082413181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,6 +482,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810f2eefa38016147adefa2d66fc78e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TurretData1:
+    turretPrefab: {fileID: 7502852291536291600, guid: 3e97a9b27e0775346ba2e98d29394b9b, type: 3}
+    cost: 0
+    turretUpgradePrefab: {fileID: 7502852291536291600, guid: e89f95492282262459ecd1b3d46d02f9, type: 3}
+    costUpgrade: 0
+    type: 0
+  TurretData2:
+    turretPrefab: {fileID: 5332143974145561832, guid: c0d7bd5b84954ca4fbd4b842e42960b1, type: 3}
+    cost: 0
+    turretUpgradePrefab: {fileID: 5332143974145561832, guid: 07cad02ced4b488448e5b875ce2d28ad, type: 3}
+    costUpgrade: 0
+    type: 0
+  TurretData3:
+    turretPrefab: {fileID: 5026349570910146776}
+    cost: 0
+    turretUpgradePrefab: {fileID: 5026349570910146776, guid: 08441b2a285e716459ca281fd6f8bbef, type: 3}
+    costUpgrade: 0
+    type: 0
+  selectedTurretData:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  isUpgrated: 0
 --- !u!1 &5026349570910146776
 GameObject:
   m_ObjectHideFlags: 0

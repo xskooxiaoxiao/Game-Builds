@@ -212,27 +212,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12aa7e9c1042994aa389e2c127885e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FattyMissileGSingleData:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  FattyCatapultGData:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  FattyMissileGData:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
   PlayerCamera: {fileID: 963194227}
   TG: {fileID: 2100000, guid: 4c507e082f47dc54db50aa4de495db17, type: 2}
   TR: {fileID: 2100000, guid: 8020179c65ab5ae49bd09b8f807fb7c3, type: 2}
   TurretData1:
     turretPrefab: {fileID: 7502852291536291600, guid: 3e97a9b27e0775346ba2e98d29394b9b, type: 3}
     cost: 50
-    turretUpgradePrefab: {fileID: 0}
+    turretUpgradePrefab: {fileID: 7502852291536291600, guid: e89f95492282262459ecd1b3d46d02f9, type: 3}
     costUpgrade: 0
     type: 0
   TurretData2:
     turretPrefab: {fileID: 5332143974145561832, guid: c0d7bd5b84954ca4fbd4b842e42960b1, type: 3}
     cost: 80
-    turretUpgradePrefab: {fileID: 0}
+    turretUpgradePrefab: {fileID: 5332143974145561832, guid: 07cad02ced4b488448e5b875ce2d28ad, type: 3}
     costUpgrade: 0
-    type: 0
+    type: 1
   TurretData3:
     turretPrefab: {fileID: 5026349570910146776, guid: ce4bdc150002867449919509d4e99b90, type: 3}
     cost: 100
-    turretUpgradePrefab: {fileID: 0}
+    turretUpgradePrefab: {fileID: 5026349570910146776, guid: 08441b2a285e716459ca281fd6f8bbef, type: 3}
     costUpgrade: 0
-    type: 0
+    type: 2
   selectedTurretData:
     turretPrefab: {fileID: 0}
     cost: 0
@@ -241,6 +259,7 @@ MonoBehaviour:
     type: 0
   moneyText: {fileID: 260150127}
   moneyAnimator: {fileID: 260150129}
+  isUpgrated: 0
   money: 200
 --- !u!114 &21354858
 MonoBehaviour:
@@ -5253,7 +5272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c24c58e8402f73349bf852d1bba94660, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d42f32554af71842ae8b427aa88b45b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7964,7 +7983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UP
+  m_Text: Upgrate
 --- !u!222 &1929284616
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8436,6 +8455,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810f2eefa38016147adefa2d66fc78e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedTurretData:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  isUpgrated: 0
 --- !u!1 &2049004994
 GameObject:
   m_ObjectHideFlags: 0

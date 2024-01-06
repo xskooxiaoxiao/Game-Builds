@@ -13,5 +13,7 @@ public class TurretData
 }
 public enum TurretType
 {
-    Turret
+    FattyMissileGSingle,
+    FattyCatapultG,
+    FattyMissileG
 }

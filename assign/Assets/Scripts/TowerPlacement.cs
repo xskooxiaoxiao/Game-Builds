@@ -27,6 +27,7 @@ public class TowerPlacement : MonoBehaviour
     public TurretData selectedTurretData;
     public Text moneyText;
     public Animator moneyAnimator;
+    public Boolean isUpgrated;
     public int money = 200;
 
     // Start is called before the first frame update
@@ -91,6 +92,7 @@ public class TowerPlacement : MonoBehaviour
                         if (money >= selectedTurretData.cost)
                         {
                             ChangeMoney(-selectedTurretData.cost);
+                            isUpgrated = false;
                             Instantiate(selectedTurretData.turretPrefab, inppp, Quaternion.identity);
                         }
                         else
@@ -113,6 +115,11 @@ public class TowerPlacement : MonoBehaviour
             Debug. Log("Its over UI elements");
         }
         */
+        
+    }
+
+    public void UpgrateTurret()
+    {
         
     }
 
@@ -158,24 +165,4 @@ public class TowerPlacement : MonoBehaviour
         }
     }
 
-    /*
-    public void OnTurretSelected(bool isOn)
-    {
-        if (isOn)
-        {
-            
-            
-            //selectedTurretData = TurretData;
-            
-            
-        }
-        
-        else
-        {
-            selectedTurretData = null;
-        }
-        
-    }
-    */
-    
 }

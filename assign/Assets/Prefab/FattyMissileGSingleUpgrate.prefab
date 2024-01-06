@@ -5411,7 +5411,7 @@ MonoBehaviour:
   muzzleMain: {fileID: 682945630590917956}
   muzzleSub: {fileID: 0}
   muzzleEff: {fileID: 1497772684437746, guid: bd75ef4ae186f454a90b2de71bed2854, type: 3}
-  bullet: {fileID: 1183480842593442924, guid: ac6056ae7068cc243973853c7b6495f8, type: 3}
+  bullet: {fileID: 1183480842593442924, guid: 23cd7533d5b1eb149936f5f21cf68cd2, type: 3}
   fireSound: {fileID: 8300000, guid: 2706f043c06fc9147a3391cf2ee0442f, type: 3}
 --- !u!82 &-8829774023873329400
 AudioSource:
