@@ -212,24 +212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12aa7e9c1042994aa389e2c127885e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FattyMissileGSingleData:
-    turretPrefab: {fileID: 0}
-    cost: 0
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
-    type: 0
-  FattyCatapultGData:
-    turretPrefab: {fileID: 0}
-    cost: 0
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
-    type: 0
-  FattyMissileGData:
-    turretPrefab: {fileID: 0}
-    cost: 0
-    turretUpgradePrefab: {fileID: 0}
-    costUpgrade: 0
-    type: 0
   PlayerCamera: {fileID: 963194227}
   TG: {fileID: 2100000, guid: 4c507e082f47dc54db50aa4de495db17, type: 2}
   TR: {fileID: 2100000, guid: 8020179c65ab5ae49bd09b8f807fb7c3, type: 2}
@@ -8455,7 +8437,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810f2eefa38016147adefa2d66fc78e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedTurretData:
+  TurretData1:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  TurretData2:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  TurretData3:
     turretPrefab: {fileID: 0}
     cost: 0
     turretUpgradePrefab: {fileID: 0}

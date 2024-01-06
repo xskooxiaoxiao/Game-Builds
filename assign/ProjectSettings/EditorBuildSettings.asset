@@ -26,5 +26,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelR.unity
     guid: 2347e937a6240354db40704bf9cfa467
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: d42d5572ee682fa4c938e47a25438f2c
+  - enabled: 1
+    path: Assets/Scenes/Brightness and auidio slider.unity
+    guid: b2348891374c7e243bb2c32ff73d2291
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

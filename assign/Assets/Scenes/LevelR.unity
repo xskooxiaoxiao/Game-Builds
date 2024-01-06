@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 618acdbd2ce7020418e84730f38af81e, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.071202435, g: 0.06973656, b: 0.010648616, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3337,6 +3337,7 @@ MonoBehaviour:
     type: 0
   moneyText: {fileID: 1434574796}
   moneyAnimator: {fileID: 1434574795}
+  isUpgrated: 0
   money: 200
 --- !u!114 &1314842756
 MonoBehaviour:
@@ -5115,6 +5116,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810f2eefa38016147adefa2d66fc78e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TurretData1:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  TurretData2:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  TurretData3:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  isUpgrated: 0
 --- !u!1 &1887727606
 GameObject:
   m_ObjectHideFlags: 0
