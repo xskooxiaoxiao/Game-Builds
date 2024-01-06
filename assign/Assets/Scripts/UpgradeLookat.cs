@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Windows;
+using Unity.VisualScripting;
 
 public class UpgradeLookat : MonoBehaviour
 {
@@ -67,18 +68,18 @@ public class UpgradeLookat : MonoBehaviour
     }
     public void UpgrateTurret1()
     {
-        if(isUpgrated == false)
-        {
-            Vector3 currentPosition = transform.position;
-            currentPosition.y -= 1.29f;
-            isUpgrated = true;
-            Destroy(transform.root.gameObject);
-            Instantiate(TurretData1.turretUpgradePrefab, currentPosition, Quaternion.identity);
-        }
-        else
-        {
-            return;
-        }
+            if (isUpgrated == false)
+            {
+                Vector3 currentPosition = transform.position;
+                currentPosition.y -= 1.29f;
+                isUpgrated = true;
+                Destroy(transform.root.gameObject);
+                Instantiate(TurretData1.turretUpgradePrefab, currentPosition, Quaternion.identity);
+            }
+            else
+            {
+                return;
+            }            
     }
 
     public void UpgrateTurret2()

@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
+using System.Threading.Tasks;
 
 public class PlayerState : MonoBehaviour
 {
@@ -16,10 +18,16 @@ public class PlayerState : MonoBehaviour
     public TextMeshProUGUI win;
     public TextMeshProUGUI hp;
     public Image HPbar;
+    //[SerializeField] GameObject losemenu;
+    public GameObject losemenu;
+    public GameObject winmenu;
 
     WaveSpawner waveSpawner;
 
+
     private bool isTransitioning = false;
+    private bool isAnimating = false;
+    float timer=0;
 
     void Awake()
     {
@@ -53,13 +61,26 @@ public class PlayerState : MonoBehaviour
 
     void Update()
     {
-        if (PlayerHealth <= 0)
+        if (PlayerHealth <= 0) //lose
         {
-            StartCoroutine(ShowGameOverUI());
+            //StartCoroutine(ShowGameOverUI());
+            timer += Time.deltaTime;
+            while (timer > 0.2) //delay 
+            {
+                losemenu.GetComponent<Mainmenu>().Pause();
+                timer = 0;
+            }
+            
         }
-        else if (PlayerHealth > 0 && waveSpawner.gameEnd == true)
+        else if (PlayerHealth > 0 && waveSpawner.gameEnd == true) //win
         {
-            StartCoroutine(ShowWinUI());
+            //StartCoroutine(ShowWinUI());
+            timer += Time.deltaTime;
+            while (timer > 0.5) //delay 
+            {
+                winmenu.GetComponent<Mainmenu>().Pause();
+                timer = 0;
+            }
         }
     }
 
@@ -95,4 +116,6 @@ public class PlayerState : MonoBehaviour
         Pause.gameObject.SetActive(false);
         yield return null; // Add any additional delay or transition effects here
     }
+
+    
 }

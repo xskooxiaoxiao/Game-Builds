@@ -28,12 +28,12 @@ public class TowerPlacement : MonoBehaviour
     public Text moneyText;
     public Animator moneyAnimator;
     public Boolean isUpgrated;
-    public int money = 200;
+    public int money = 200;   
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     void ChangeMoney(int change = 0)
@@ -45,10 +45,10 @@ public class TowerPlacement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)
         {
-            moneyText.text = "$" + money;
+            
             Ray camray = PlayerCamera.ScreenPointToRay(Input.mousePosition);
             Debug.DrawRay(camray.origin, camray.direction * 10, Color.yellow);
             if (Physics.Raycast(camray, out RaycastHit hitInfo, 100f))
