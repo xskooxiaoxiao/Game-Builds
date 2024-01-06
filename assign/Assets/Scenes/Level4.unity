@@ -1836,8 +1836,8 @@ Transform:
   m_GameObject: {fileID: 452150633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.8487, y: -0, z: -0.0223}
-  m_LocalScale: {x: 31, y: 1, z: 21}
+  m_LocalPosition: {x: 4.9737, y: 0, z: 0.131}
+  m_LocalScale: {x: 31.052702, y: 1, z: 19.166256}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1489644693}
@@ -8434,6 +8434,8 @@ MonoBehaviour:
   startcountdown: 3
   waves:
   - enemies:
+    - 1
+    - 1
     - 1
     timeToNextEnemy: 1
     timeToNextWave: 2

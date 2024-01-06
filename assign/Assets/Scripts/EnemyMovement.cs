@@ -127,6 +127,41 @@ void Awake()
             }
 		}
 
+        else if (sceneName == "Level4") 
+		{
+            //transform.position = new Vector3(-18.0f,enemyheight,21.0f);
+            pini = 6;
+            pin = new Vector3[pini];
+            int spawn = Random.Range(1, 3);
+            if (spawn == 1) // spawn and route 1
+            {
+                transform.position = new Vector3(-18.0f,enemyheight,20.0f);
+                pin[0] = new Vector3(-18.0f,0.0f,20.0f);
+                pin[1] = new Vector3(-18.0f,0.0f,15.0f);
+                pin[2] = new Vector3(-9.0f,0.0f,15.0f);
+                pin[3] = new Vector3(-9.0f,0.0f,4.0f);
+                pin[4] = new Vector3(6.0f,0.0f,4.0f);
+                pin[5] = new Vector3(6.0f,0.0f,0.0f);
+            }
+            else            // spawn and route 2
+            {
+                transform.position = new Vector3(-21.0f,enemyheight,3.0f);
+                pin[0] = new Vector3(-21.0f,0.0f,3.0f);
+                pin[1] = new Vector3(-12.0f,0.0f,3.0f);
+                pin[2] = new Vector3(-12.0f,0.0f,7.0f);
+                pin[3] = new Vector3(2.0f,0.0f,7.0f);
+                pin[4] = new Vector3(2.0f,0.0f,15.0f);
+                pin[5] = new Vector3(11.0f,0.0f,15.0f);
+            }
+            
+            for (int j=0;j<pini;j++)
+            {
+            //pin[j] = mapSystem.target[j];
+            pin[j][1] = enemyheight;
+            
+            }
+		}
+
 		else if (sceneName == "LevelR")
 		{
 			mapSystem = GameObject.Find("MAP").GetComponent<MapSystem>();
