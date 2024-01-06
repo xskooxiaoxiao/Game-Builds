@@ -28,12 +28,12 @@ public class TowerPlacement : MonoBehaviour
     public Text moneyText;
     public Animator moneyAnimator;
     public Boolean isUpgrated;
-    public int money = 200;
+    public int money = 200;   
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     void ChangeMoney(int change = 0)
