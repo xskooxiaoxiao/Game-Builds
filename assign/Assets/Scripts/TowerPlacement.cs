@@ -32,10 +32,10 @@ public class TowerPlacement : MonoBehaviour
     public int money = 200;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        money = 200;
-    }
+    //void Start()
+    //{
+    //    money = 200;
+    //}
 
     void ChangeMoney(int change = 0)
     {

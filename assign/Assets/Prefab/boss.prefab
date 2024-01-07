@@ -350,7 +350,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 12, z: 12}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2918794101557312852}
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bdbd72eb470d8458fe8bfe6e21465e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 600
+  hp: 1600
   earn: 50
   EnemyDeath: {fileID: 8751721073250465154, guid: a97e27c94995a6a4db6c224e50b80d80, type: 3}
 --- !u!114 &8846381547347255252
