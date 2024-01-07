@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 328939825243340163}
   - component: {fileID: 8134713739526168159}
   - component: {fileID: 7233603700877102886}
-  - component: {fileID: -3770215384563503053}
+  - component: {fileID: 7719018140664989781}
   m_Layer: 0
   m_Name: FattyMissileGUpgrate
   m_TagString: Untagged
@@ -308,7 +308,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 020a03b6265e7df46814141faab458bd, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -393,7 +393,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-3770215384563503053
+--- !u!114 &7719018140664989781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5026349570910146776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5223527059045555155

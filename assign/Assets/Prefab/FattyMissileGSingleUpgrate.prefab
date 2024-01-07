@@ -5362,7 +5362,7 @@ GameObject:
   - component: {fileID: 8645508812345487191}
   - component: {fileID: 7868739387441020409}
   - component: {fileID: -8829774023873329400}
-  - component: {fileID: 4231176496003075871}
+  - component: {fileID: 6962553450483237737}
   m_Layer: 2
   m_Name: FattyMissileGSingleUpgrate
   m_TagString: Untagged
@@ -5510,7 +5510,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4231176496003075871
+--- !u!114 &6962553450483237737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5519,7 +5519,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7502852291536291600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8274964749114985574
