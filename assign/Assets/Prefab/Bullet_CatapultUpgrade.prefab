@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4004586756977808020}
   - component: {fileID: 1225980369553461215}
   m_Layer: 0
-  m_Name: Bullet_CatapultUpgrate
+  m_Name: Bullet_CatapultUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

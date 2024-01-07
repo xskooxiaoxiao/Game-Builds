@@ -1572,6 +1572,7 @@ GameObject:
   - component: {fileID: 381016463}
   - component: {fileID: 381016462}
   - component: {fileID: 381016465}
+  - component: {fileID: 381016466}
   m_Layer: 5
   m_Name: Retry
   m_TagString: Untagged
@@ -1719,6 +1720,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleFactor: 1.1
   animationDuration: 0.2
+--- !u!114 &381016466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381016460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &394029841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,6 +4770,7 @@ GameObject:
   - component: {fileID: 1114483725}
   - component: {fileID: 1114483724}
   - component: {fileID: 1114483727}
+  - component: {fileID: 1114483728}
   m_Layer: 5
   m_Name: Mainmenu
   m_TagString: Untagged
@@ -4904,6 +4918,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleFactor: 1.1
   animationDuration: 0.2
+--- !u!114 &1114483728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114483722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1173333158
 Transform:
   m_ObjectHideFlags: 0
@@ -5290,6 +5316,7 @@ GameObject:
   - component: {fileID: 1233172747}
   - component: {fileID: 1233172746}
   - component: {fileID: 1233172749}
+  - component: {fileID: 1233172750}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -5437,6 +5464,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleFactor: 1.1
   animationDuration: 0.2
+--- !u!114 &1233172750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233172744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1244682177
 GameObject:
   m_ObjectHideFlags: 0
@@ -5450,6 +5489,7 @@ GameObject:
   - component: {fileID: 1244682180}
   - component: {fileID: 1244682179}
   - component: {fileID: 1244682182}
+  - component: {fileID: 1244682183}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -5597,6 +5637,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleFactor: 1.1
   animationDuration: 0.2
+--- !u!114 &1244682183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244682177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1249852430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6915,7 +6967,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1518234265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1530681432
@@ -8516,7 +8568,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1858777285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1874518256
@@ -9557,7 +9609,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2017604463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2019877424
