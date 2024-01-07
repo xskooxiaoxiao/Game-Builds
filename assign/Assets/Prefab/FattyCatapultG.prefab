@@ -9927,7 +9927,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8313253930375729404}
+      - m_Target: {fileID: 4530079901752492565}
         m_TargetAssemblyTypeName: UpgradeLookat, Assembly-CSharp
         m_MethodName: UpgrateTurret2
         m_Mode: 1
@@ -10366,7 +10366,7 @@ GameObject:
   - component: {fileID: 4079303137799482252}
   - component: {fileID: 3454293948476882038}
   - component: {fileID: 4051700721590248470}
-  - component: {fileID: 8313253930375729404}
+  - component: {fileID: 4530079901752492565}
   m_Layer: 5
   m_Name: CanvasU
   m_TagString: CanvasU
@@ -10457,7 +10457,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8313253930375729404
+--- !u!114 &4530079901752492565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10482,9 +10482,9 @@ MonoBehaviour:
     costUpgrade: 50
     type: 1
   TurretData3:
-    turretPrefab: {fileID: 0}
+    turretPrefab: {fileID: 5026349570910146776, guid: ce4bdc150002867449919509d4e99b90, type: 3}
     cost: 100
-    turretUpgradePrefab: {fileID: 0}
+    turretUpgradePrefab: {fileID: 5026349570910146776, guid: 08441b2a285e716459ca281fd6f8bbef, type: 3}
     costUpgrade: 70
     type: 2
   isUpgrated: 0

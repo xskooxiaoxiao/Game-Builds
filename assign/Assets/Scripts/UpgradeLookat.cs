@@ -34,6 +34,7 @@ public class UpgradeLookat : MonoBehaviour
         moneyText = GameObject.Find("Canvas/Money").GetComponent<Text>();
         moneyAnimator = GameObject.Find("Canvas/Money").GetComponent<Animator>();
 
+
         /*
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
@@ -45,9 +46,10 @@ public class UpgradeLookat : MonoBehaviour
         {
             for (int i = 0; i < canvasObject.transform.childCount; i++)
             {
-                    canvasObject.transform.GetChild(i).gameObject.SetActive(false);
+                canvasObject.transform.GetChild(i).gameObject.SetActive(false);
             }
         }
+
     }
 
     // Update is called once per frame
@@ -67,53 +69,71 @@ public class UpgradeLookat : MonoBehaviour
     }
 
     public void UpgradeButtonVis(bool isOn)
+    {
+        GameObject[] canvasObjects = GameObject.FindGameObjectsWithTag("CanvasU");
+        if (isOn)
         {
-            GameObject[] canvasObjects = GameObject.FindGameObjectsWithTag("CanvasU");
-            if (isOn)
+            foreach (GameObject canvasObject in canvasObjects)
             {
-                foreach (GameObject canvasObject in canvasObjects)
+                for (int i = 0; i < canvasObject.transform.childCount; i++)
                 {
-                    for (int i = 0; i < canvasObject.transform.childCount; i++)
-                    {
-                        canvasObject.transform.GetChild(i).gameObject.SetActive(true);
-                    }
-
+                    canvasObject.transform.GetChild(i).gameObject.SetActive(true);
                 }
+                
             }
-            else
+        }
+        else
+        {
+            foreach (GameObject canvasObject in canvasObjects)
             {
-                foreach (GameObject canvasObject in canvasObjects)
+                for (int i = 0; i < canvasObject.transform.childCount; i++)
                 {
-                    for (int i = 0; i < canvasObject.transform.childCount; i++)
-                    {
-                        canvasObject.transform.GetChild(i).gameObject.SetActive(false);
-                    }
+                    canvasObject.transform.GetChild(i).gameObject.SetActive(false);
                 }
             }
         }
+    }
     public void UpgrateTurret1()
     {
-
         if (towerPlacement.money >= TurretData1.costUpgrade)
         {
             if (isUpgrated == false)
             {
                 isUpgrated = true;
                 towerPlacement.money -= TurretData1.costUpgrade;
+                Vector3 currentPosition = transform.position;
+                currentPosition.y -= 1.29f;
+                Destroy(transform.root.gameObject);
+                Instantiate(TurretData1.turretUpgradePrefab, currentPosition, Quaternion.identity);
+            }
+            else
+            {
+                return;
+            }
+        }
+        else
+        {
+            moneyAnimator.SetTrigger("NoFund");
+        }
+              
+    }
 
-                if (isUpgrated == false)
-                {
-
-                    Vector3 currentPosition = transform.position;
-                    currentPosition.y -= 1.29f;
-                    isUpgrated = true;
-                    Destroy(transform.root.gameObject);
-                    Instantiate(TurretData1.turretUpgradePrefab, currentPosition, Quaternion.identity);
-                }
-                else
-                {
-                    return;
-                }
+    public void UpgrateTurret2()
+    {
+        if (towerPlacement.money >= TurretData2.costUpgrade)
+        {
+            if (isUpgrated == false)
+            {
+                isUpgrated = true;
+                towerPlacement.money -= TurretData2.costUpgrade;
+                Vector3 currentPosition = transform.position;
+                currentPosition.y -= 1.29f;
+                Destroy(transform.root.gameObject);
+                Instantiate(TurretData2.turretUpgradePrefab, currentPosition, Quaternion.identity);
+            }
+            else
+            {
+                return;
             }
         }
         else
@@ -122,35 +142,8 @@ public class UpgradeLookat : MonoBehaviour
         }
     }
 
-    public void UpgrateTurret2()
-        {
-
-            if (towerPlacement.money >= TurretData2.costUpgrade)
-            {
-                if (isUpgrated == false)
-                {
-                    isUpgrated = true;
-                    towerPlacement.money -= TurretData2.costUpgrade;
-                    Vector3 currentPosition = transform.position;
-                    currentPosition.y -= 1.29f;
-                    Destroy(transform.root.gameObject);
-                    Instantiate(TurretData2.turretUpgradePrefab, currentPosition, Quaternion.identity);
-                }
-                else
-                {
-                    return;
-                }
-
-            }
-            else
-            {
-            moneyAnimator.SetTrigger("NoFund");
-            }
-        }
-
     public void UpgrateTurret3()
     {
-
         if (towerPlacement.money >= TurretData3.costUpgrade)
         {
             if (isUpgrated == false)
@@ -166,14 +159,11 @@ public class UpgradeLookat : MonoBehaviour
             {
                 return;
             }
-
         }
         else
         {
             moneyAnimator.SetTrigger("NoFund");
         }
-
     }
-}
 
-    
+}   

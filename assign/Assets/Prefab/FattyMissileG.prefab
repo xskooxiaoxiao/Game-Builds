@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 2405713891053875885}
   - component: {fileID: 5804865818915118694}
   - component: {fileID: 5074284439418814698}
-  - component: {fileID: 81765220683968977}
+  - component: {fileID: 4303979813545660394}
   m_Layer: 5
   m_Name: CanvasU
   m_TagString: CanvasU
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &81765220683968977
+--- !u!114 &4303979813545660394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 81765220683968977}
+      - m_Target: {fileID: 4303979813545660394}
         m_TargetAssemblyTypeName: UpgradeLookat, Assembly-CSharp
         m_MethodName: UpgrateTurret3
         m_Mode: 1
