@@ -65,7 +65,7 @@ public class UpgradeLookat : MonoBehaviour
         Vector3 oppositePosition = transform.position + (transform.position - playerPosition);
         transform.LookAt(oppositePosition);
 
-        Debug.Log("Money: " + towerPlacement.money);
+        //Debug.Log("Money: " + towerPlacement.money);
     }
 
     public void UpgradeButtonVis(bool isOn)

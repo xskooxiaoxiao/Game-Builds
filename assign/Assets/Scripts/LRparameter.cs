@@ -12,6 +12,9 @@ public class mapData
     public int wa;
     public float ma;
 
+    public float w;
+    public float m;
+
     
 }
   
@@ -27,12 +30,20 @@ public class LRparameter : MonoBehaviour
     {
         mData = new mapData();
         saveFilePath = Application.persistentDataPath + "/mData.json";
+
+        string loadmData = File.ReadAllText(saveFilePath);
+        mData = JsonUtility.FromJson<mapData>(loadmData);
+        scrollbarm.value = mData.m;
+        scrollbarw.value = mData.w;
+
     }
   
     void Update()
     {
         mData.ma = 26.0f + Convert.ToInt32(scrollbarm.value*30);
         mData.wa = 5 + Convert.ToInt32(scrollbarw.value*mData.ma*3);
+        mData.w = scrollbarw.value;
+        mData.m = scrollbarm.value;
         scrollbarw.GetComponentInChildren<TextMeshProUGUI>().text = "Path Complexity: " + mData.wa;
         scrollbarm.GetComponentInChildren<TextMeshProUGUI>().text = "Map Scale: " + mData.ma + "*" + mData.ma;
         /*
