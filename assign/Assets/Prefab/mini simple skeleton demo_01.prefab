@@ -606,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   enemyheight: 0.1
-  DamagetoPlayerHealth: 1
+  DamagetoPlayerHealth: 2
 --- !u!136 &8059823593689255156
 CapsuleCollider:
   m_ObjectHideFlags: 0
