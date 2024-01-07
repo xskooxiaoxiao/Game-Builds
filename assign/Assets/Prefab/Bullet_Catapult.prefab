@@ -72,8 +72,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   target: {fileID: 0}
-  lockOn: 0
-  speed: 10
+  lockOn: 1
+  speed: 100
   turnSpeed: 1
   catapult: 1
   knockBack: 1.5

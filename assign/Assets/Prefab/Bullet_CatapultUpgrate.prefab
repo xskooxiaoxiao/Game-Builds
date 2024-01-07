@@ -72,8 +72,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   target: {fileID: 0}
-  lockOn: 0
-  speed: 10
+  lockOn: 1
+  speed: 100
   turnSpeed: 2
   catapult: 1
   knockBack: 1.5
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447c11b135ba4f340be1fa95d981e737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 45
+  damage: 100
 --- !u!54 &1225980369553461215
 Rigidbody:
   m_ObjectHideFlags: 0
