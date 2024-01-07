@@ -589,8 +589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58bdbd72eb470d8458fe8bfe6e21465e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 33
-  earn: 30
+  hp: 200
+  earn: 20
   EnemyDeath: {fileID: 2444002345933398879, guid: 0ccf898fdfcfc194f87da78dfae329ba, type: 3}
 --- !u!114 &1019059279994706837
 MonoBehaviour:
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f602cb6e4fc07418c98096c2ba349d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   enemyheight: 0.1
   DamagetoPlayerHealth: 1
 --- !u!136 &8059823593689255156

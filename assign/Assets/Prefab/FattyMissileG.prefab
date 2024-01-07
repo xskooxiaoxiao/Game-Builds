@@ -555,7 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTarget: {fileID: 0}
   turreyHead: {fileID: 6607774505039833704}
-  attackDist: 8
+  attackDist: 6
   attackDamage: 20
   shootCoolDown: 0.8
   loockSpeed: 100

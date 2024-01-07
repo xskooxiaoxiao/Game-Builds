@@ -75,7 +75,7 @@ MonoBehaviour:
   type: 1
   target: {fileID: 0}
   lockOn: 0
-  speed: 15
+  speed: 10
   turnSpeed: 2
   catapult: 0
   knockBack: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447c11b135ba4f340be1fa95d981e737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 33
 --- !u!54 &7472544959567829855
 Rigidbody:
   m_ObjectHideFlags: 0
