@@ -45,9 +45,14 @@ public class TowerPlacement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         //UpgradeLookat upgradeLookat = FindFirstObjectByType<UpgradeLookat>();
         //money = upgradeLookat.money;
 
+=======
+        UpgradeLookat upgradeLookat = FindFirstObjectByType<UpgradeLookat>();
+        money = upgradeLookat.money;
+>>>>>>> parent of e769772 (1111)
         moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)
         {
