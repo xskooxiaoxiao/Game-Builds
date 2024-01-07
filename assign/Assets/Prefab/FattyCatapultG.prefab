@@ -9950,7 +9950,7 @@ GameObject:
   - component: {fileID: 5129391386580606296}
   - component: {fileID: 2484466472001257828}
   - component: {fileID: 1140994030306440641}
-  - component: {fileID: -7688647390436705053}
+  - component: {fileID: 6847586793860355126}
   m_Layer: 0
   m_Name: FattyCatapultG
   m_TagString: Untagged
@@ -10099,7 +10099,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-7688647390436705053
+--- !u!114 &6847586793860355126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10108,7 +10108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5332143974145561832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 58e63c97256b1df4ea6fd9233d2c56a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5534707655068283918

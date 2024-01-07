@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 6047333063880033675}
   - component: {fileID: 5659376593208737181}
   m_Layer: 0
-  m_Name: Bullet_MissleUpgrate
+  m_Name: Bullet_MissleUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

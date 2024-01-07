@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 795677869211845334}
   - component: {fileID: 7472544959567829855}
   m_Layer: 0
-  m_Name: Bullet_GunUpgrate
+  m_Name: Bullet_GunUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
