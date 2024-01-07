@@ -5567,6 +5567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86134558}
   - component: {fileID: 86134557}
+  - component: {fileID: 86134559}
   m_Layer: 0
   m_Name: Audiosource
   m_TagString: Untagged
@@ -5685,6 +5686,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86134559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86134556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &87954561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15630,6 +15643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 681853773}
   - component: {fileID: 681853772}
+  - component: {fileID: 681853774}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -15748,6 +15762,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &681853774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681853771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &684852698
 GameObject:
   m_ObjectHideFlags: 0
@@ -19313,6 +19339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070980574}
   - component: {fileID: 1070980573}
+  - component: {fileID: 1070980575}
   m_Layer: 0
   m_Name: Togglesound
   m_TagString: Untagged
@@ -19431,6 +19458,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070980575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070980572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1072137778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9066992238348588384, guid: 44bc2e4589af17c4f8c39b6954d2e176, type: 3}
