@@ -12,6 +12,8 @@ public class setData
     public float audio;
     public float bright;
 
+    public float sfx;
+
     
 }
   
@@ -22,6 +24,8 @@ public class settingData : MonoBehaviour
 
     public Scrollbar scrollbarw;
     public Scrollbar scrollbarm;
+
+    public Scrollbar scrollbarsfx;
   
     void Start()
     {
@@ -32,17 +36,18 @@ public class settingData : MonoBehaviour
         sData = JsonUtility.FromJson<setData>(loadsData);
         scrollbarw.value = sData.audio;
         scrollbarm.value = sData.bright;
-        
+        scrollbarsfx.value = sData.sfx;
     }
   
     void Update()
     {
         sData.audio = scrollbarw.value;
         sData.bright = scrollbarm.value;
+        sData.sfx = scrollbarsfx.value;
         
-        scrollbarw.GetComponentInChildren<TextMeshProUGUI>().text = "Audio: " + sData.audio;
+        scrollbarw.GetComponentInChildren<TextMeshProUGUI>().text = "Music: " + sData.audio;
         scrollbarm.GetComponentInChildren<TextMeshProUGUI>().text = "Brightness: " + sData.bright;
-        
+        scrollbarsfx.GetComponentInChildren<TextMeshProUGUI>().text = "SFX: " + sData.sfx;
     }
   
     public void SaveGame()
