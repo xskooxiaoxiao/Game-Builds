@@ -74,7 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   target: {fileID: 0}
-  lockOn: 0
+  lockOn: 1
   speed: 10
   turnSpeed: 2
   catapult: 0

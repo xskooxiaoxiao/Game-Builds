@@ -555,9 +555,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTarget: {fileID: 0}
   turreyHead: {fileID: 6607774505039833704}
-  attackDist: 6
+  attackDist: 7
   attackDamage: 20
-  shootCoolDown: 0.8
+  shootCoolDown: 1
   loockSpeed: 100
   randomRot: {x: 0, y: 0, z: 0}
   animator: {fileID: 0}
