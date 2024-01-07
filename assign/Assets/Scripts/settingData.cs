@@ -27,6 +27,12 @@ public class settingData : MonoBehaviour
     {
         sData = new setData();
         saveFilePath = Application.persistentDataPath + "/sData.json";
+
+        string loadsData = File.ReadAllText(saveFilePath);
+        sData = JsonUtility.FromJson<setData>(loadsData);
+        scrollbarw.value = sData.audio;
+        scrollbarm.value = sData.bright;
+        
     }
   
     void Update()
