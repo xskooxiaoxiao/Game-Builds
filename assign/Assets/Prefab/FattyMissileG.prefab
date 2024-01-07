@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 328939825243340163}
   - component: {fileID: 8134713739526168159}
   - component: {fileID: 7233603700877102886}
+  - component: {fileID: 8162475467846213920}
   m_Layer: 0
   m_Name: FattyMissileG
   m_TagString: Untagged
@@ -663,6 +664,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8162475467846213920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026349570910146776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4476cfaea57fc484c830aafe4e5372e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5223527059045555155
 GameObject:
   m_ObjectHideFlags: 0
