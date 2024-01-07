@@ -9,7 +9,14 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
-
+    public void Playlevel()
+    {
+        SceneManager.LoadSceneAsync(8);
+    }
+    public void back() 
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
     public void QuitGame()
     {
         Application.Quit();

@@ -49,7 +49,6 @@ public class UpgradeLookat : MonoBehaviour
                 canvasObject.transform.GetChild(i).gameObject.SetActive(false);
             }
         }
-
     }
 
     // Update is called once per frame
@@ -103,19 +102,14 @@ public class UpgradeLookat : MonoBehaviour
                 towerPlacement.money -= TurretData1.costUpgrade;
                 Vector3 currentPosition = transform.position;
                 currentPosition.y -= 1.29f;
+                isUpgrated = true;
                 Destroy(transform.root.gameObject);
                 Instantiate(TurretData1.turretUpgradePrefab, currentPosition, Quaternion.identity);
             }
             else
             {
                 return;
-            }
-        }
-        else
-        {
-            moneyAnimator.SetTrigger("NoFund");
-        }
-              
+            }            
     }
 
     public void UpgrateTurret2()

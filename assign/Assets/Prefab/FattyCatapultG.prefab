@@ -9818,6 +9818,7 @@ GameObject:
   - component: {fileID: 7156058072693860188}
   - component: {fileID: 3264112176046340018}
   - component: {fileID: 8103266595909684828}
+  - component: {fileID: 7938280912603772730}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -9927,7 +9928,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4530079901752492565}
+      - m_Target: {fileID: 7938280912603772730}
         m_TargetAssemblyTypeName: UpgradeLookat, Assembly-CSharp
         m_MethodName: UpgrateTurret2
         m_Mode: 1
@@ -9939,6 +9940,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7938280912603772730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277091256432191124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810f2eefa38016147adefa2d66fc78e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurretData1:
+    turretPrefab: {fileID: 7502852291536291600, guid: 3e97a9b27e0775346ba2e98d29394b9b, type: 3}
+    cost: 0
+    turretUpgradePrefab: {fileID: 7502852291536291600, guid: e89f95492282262459ecd1b3d46d02f9, type: 3}
+    costUpgrade: 0
+    type: 0
+  TurretData2:
+    turretPrefab: {fileID: 5332143974145561832}
+    cost: 0
+    turretUpgradePrefab: {fileID: 5332143974145561832, guid: 07cad02ced4b488448e5b875ce2d28ad, type: 3}
+    costUpgrade: 0
+    type: 0
+  TurretData3:
+    turretPrefab: {fileID: 0}
+    cost: 0
+    turretUpgradePrefab: {fileID: 0}
+    costUpgrade: 0
+    type: 0
+  isUpgrated: 0
 --- !u!1 &5332143974145561832
 GameObject:
   m_ObjectHideFlags: 0
@@ -10366,7 +10398,6 @@ GameObject:
   - component: {fileID: 4079303137799482252}
   - component: {fileID: 3454293948476882038}
   - component: {fileID: 4051700721590248470}
-  - component: {fileID: 4530079901752492565}
   m_Layer: 5
   m_Name: CanvasU
   m_TagString: CanvasU
@@ -10457,40 +10488,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4530079901752492565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8130856736200032015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 810f2eefa38016147adefa2d66fc78e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurretData1:
-    turretPrefab: {fileID: 7502852291536291600, guid: 3e97a9b27e0775346ba2e98d29394b9b, type: 3}
-    cost: 50
-    turretUpgradePrefab: {fileID: 7502852291536291600, guid: e89f95492282262459ecd1b3d46d02f9, type: 3}
-    costUpgrade: 20
-    type: 0
-  TurretData2:
-    turretPrefab: {fileID: 5332143974145561832}
-    cost: 80
-    turretUpgradePrefab: {fileID: 5332143974145561832, guid: 07cad02ced4b488448e5b875ce2d28ad, type: 3}
-    costUpgrade: 50
-    type: 1
-  TurretData3:
-    turretPrefab: {fileID: 5026349570910146776, guid: ce4bdc150002867449919509d4e99b90, type: 3}
-    cost: 100
-    turretUpgradePrefab: {fileID: 5026349570910146776, guid: 08441b2a285e716459ca281fd6f8bbef, type: 3}
-    costUpgrade: 70
-    type: 2
-  isUpgrated: 0
-  moneyText: {fileID: 0}
-  moneyAnimator: {fileID: 0}
-  money: 0
 --- !u!1 &8600472780538741843
 GameObject:
   m_ObjectHideFlags: 0
