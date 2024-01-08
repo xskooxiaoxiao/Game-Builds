@@ -22,6 +22,7 @@ public class VolumeSFX : MonoBehaviour
         //m_MySliderValue = PlayerPrefs.GetFloat("AudioVolume", 0.5f); // Load the saved audio volume or use a default value
         m_MyAudioSource = GetComponent<AudioSource>();
         m_MyAudioSource.volume = sData.sfx; // Set the volume initially
+        //
         //m_MyAudioSource.Play();
     }
 

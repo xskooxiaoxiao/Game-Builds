@@ -957,6 +957,7 @@ GameObject:
   - component: {fileID: 1169425367}
   - component: {fileID: 1169425366}
   - component: {fileID: 1169425365}
+  - component: {fileID: 1169425368}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1090,6 +1091,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169425363}
   m_CullTransparentMesh: 1
+--- !u!114 &1169425368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169425363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061ec8df8c5f2dd46af75174cda130af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.1
+  animationDuration: 0.2
 --- !u!1 &1303675203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,7 +1133,7 @@ RectTransform:
   m_GameObject: {fileID: 1303675203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7879, y: 0.7879, z: 0.7879}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2074667466}
@@ -1192,7 +1207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 49984cee4daea5e4f8a34e9e1b70dffd, type: 2}
-  m_Color: {r: 0.03773582, g: 0.026842272, b: 0.026842272, a: 1}
+  m_Color: {r: 0.3584906, g: 0.021644693, b: 0.021644693, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1484,7 +1499,7 @@ RectTransform:
   m_GameObject: {fileID: 1708818342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7879, y: 0.7879, z: 0.7879}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 80997121}
@@ -1563,7 +1578,7 @@ RectTransform:
   m_GameObject: {fileID: 1743825705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0840502, y: 3.0840502, z: 3.0840502}
+  m_LocalScale: {x: 2.429923, y: 2.429923, z: 2.429923}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1769818012}
@@ -1868,7 +1883,7 @@ RectTransform:
   m_GameObject: {fileID: 1801232141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7879, y: 0.7879, z: 0.7879}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 729684390}
@@ -1903,8 +1918,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.3660377, g: 0.50473446, b: 0.9150943, a: 1}
+    m_SelectedColor: {r: 0.34158063, g: 0.5050753, b: 0.8962264, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1920,7 +1935,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1443463317}
+  m_TargetGraphic: {fileID: 1922238351}
   m_HandleRect: {fileID: 1443463316}
   m_Direction: 0
   m_Value: 0
@@ -1942,7 +1957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 49984cee4daea5e4f8a34e9e1b70dffd, type: 2}
-  m_Color: {r: 0.03773582, g: 0.026842272, b: 0.026842272, a: 1}
+  m_Color: {r: 0.4528302, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2299,7 +2314,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7879, y: 0.7879, z: 0.7879}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
