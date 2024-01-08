@@ -9767,21 +9767,38 @@ MonoBehaviour:
     - 2
     - 1
     - 2
-    - 2
+    - 1
     - 1
     timeToNextEnemy: 1
     timeToNextWave: 2
     enemiesLeft: 0
   - enemies:
+    - 1
+    - 2
+    - 1
+    - 1
     - 2
     - 2
+    - 1
+    - 1
     - 2
+    timeToNextEnemy: 1
+    timeToNextWave: 2
+    enemiesLeft: 0
+  - enemies:
     - 2
+    - 1
+    - 1
     - 2
+    - 1
+    - 3
     - 2
+    - 1
     - 2
+    - 1
+    - 3
     - 2
-    - 2
+    - 1
     - 2
     timeToNextEnemy: 1
     timeToNextWave: 2
@@ -9789,54 +9806,85 @@ MonoBehaviour:
   - enemies:
     - 2
     - 2
+    - 3
+    - 3
+    - 2
+    - 2
+    - 3
+    - 3
+    - 2
+    - 3
+    - 1
     - 2
     - 2
     - 2
     - 2
     - 2
+    - 3
+    - 3
     - 2
-    - 2
-    - 2
+    - 3
     timeToNextEnemy: 1
     timeToNextWave: 2
     enemiesLeft: 0
   - enemies:
     - 2
+    - 3
+    - 2
+    - 2
+    - 2
+    - 3
     - 2
     - 2
     - 2
     - 2
     - 2
+    - 4
     - 2
     - 2
     - 2
+    - 3
+    - 2
+    - 3
+    - 3
+    - 2
+    - 2
+    - 3
+    - 2
+    - 3
     - 2
     timeToNextEnemy: 1
     timeToNextWave: 2
     enemiesLeft: 0
   - enemies:
+    - 3
+    - 2
+    - 3
+    - 3
+    - 2
+    - 2
+    - 3
+    - 2
+    - 2
+    - 2
+    - 3
     - 2
     - 2
     - 2
     - 2
     - 2
     - 2
+    - 4
     - 2
     - 2
     - 2
+    - 3
     - 2
-    timeToNextEnemy: 1
-    timeToNextWave: 2
-    enemiesLeft: 0
-  - enemies:
+    - 3
     - 2
     - 2
     - 2
-    - 2
-    - 2
-    - 2
-    - 2
-    - 2
+    - 4
     - 2
     - 2
     timeToNextEnemy: 1
