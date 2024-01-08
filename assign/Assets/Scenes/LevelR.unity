@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.236824, g: 0.2961644, b: 0.34656513, a: 1}
+  m_IndirectSpecularColor: {r: 0.23682326, g: 0.29616475, b: 0.346565, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1399,8 +1399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: []
-  pathcube: {fileID: 5923648313701113158, guid: 5c2e36761d030cf41a5cd428f13210fc, type: 3}
-  walll: {fileID: 7436987265718601408, guid: ae3a451f537dc8540b61a88a278e1cb7, type: 3}
+  pathcube: {fileID: 7415869973363417734, guid: ad6f87e237d13084d902a8bef4ea8624, type: 3}
+  walll: {fileID: 2642437850805337888, guid: 5f833abf66eaeb54594996e32a1b4c89, type: 3}
   roof: {fileID: 8655735568885487613, guid: deb1c5d78a4ab854bb78f63dc2f17244, type: 3}
   targeti: 4
   mapscale: 26
@@ -1446,7 +1446,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9d5845228ff998548a63d2b527d36121, type: 2}
+  - {fileID: 2100000, guid: 93e77b1cd3fccdb40a0a782e2bb42a1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
