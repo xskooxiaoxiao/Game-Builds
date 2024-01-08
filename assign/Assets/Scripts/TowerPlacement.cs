@@ -63,6 +63,10 @@ public class TowerPlacement : MonoBehaviour
         {
             money = 99999999;
         }
+        else if (gData.imoney == 1)
+        {
+            money = 700;
+        }
 
         moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)
