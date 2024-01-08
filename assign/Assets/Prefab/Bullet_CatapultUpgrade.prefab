@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1488030736896514962}
   - component: {fileID: 4004586756977808020}
   - component: {fileID: 1225980369553461215}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet_CatapultUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 3803659871117445425}
   - component: {fileID: 7684148294234220860}
   - component: {fileID: 4139436999033925274}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet03 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 5264195017073801407}
   - component: {fileID: 1838603143664817450}
   - component: {fileID: 7337285236438781769}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Eff_Spark00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
