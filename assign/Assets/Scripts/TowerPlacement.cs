@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -31,6 +32,9 @@ public class TowerPlacement : MonoBehaviour
     public Boolean isUpgrated;
     public int money = 200;
 
+    gameData gData;
+    string saveFilePath;
+
     // Start is called before the first frame update
     //void Start()
     //{
@@ -43,11 +47,22 @@ public class TowerPlacement : MonoBehaviour
         moneyText.text = "$" + money;
     }
 
+    private void Start()
+    {
+        gData = new gameData();
+        saveFilePath = Application.persistentDataPath + "/gData.json";
+        string loadgData = File.ReadAllText(saveFilePath);
+        gData = JsonUtility.FromJson<gameData>(loadgData);
+    }
     // Update is called once per frame
     void Update()
     {
         //UpgradeLookat upgradeLookat = FindFirstObjectByType<UpgradeLookat>();
         //money = upgradeLookat.money;
+        if (gData.imoney == 1)
+        {
+            money = 99999999;
+        }
 
         moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 using TMPro;
+using System.IO;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -26,12 +27,25 @@ public class WaveSpawner : MonoBehaviour
 
     private bool readyToCountDown;
 
-    
+    gameData gData;
+    string saveFilePath;
+
+    float timer=0;
+    float delay = 1.0f;
+    int enemyi = 30;
+    int s1=10;
+    int s2=10;
+    int s3=10;
+    int s4=1;
 
 
     
     private void Start()
     {
+        gData = new gameData();
+        saveFilePath = Application.persistentDataPath + "/gData.json";
+        string loadgData = File.ReadAllText(saveFilePath);
+        gData = JsonUtility.FromJson<gameData>(loadgData);
         
         readyToCountDown = true;
 
@@ -52,7 +66,7 @@ public class WaveSpawner : MonoBehaviour
             }
             
         }
-        else
+        else if (start == 1 && gData.normal == 1)
         {
             if (currentWaveIndex >= waves.Length)
         {
@@ -83,6 +97,42 @@ public class WaveSpawner : MonoBehaviour
             
         }
         }
+
+
+        else if (start == 1 && (gData.infinite == 1 || gData.imoney == 1))
+        {
+            timer += Time.deltaTime;
+        
+       
+            while (timer > delay) //Spawn Enemy
+            {
+                if (s1 > 0)
+                {
+                    GameObject newObject = Instantiate(e1);
+                    s1--;
+                }
+                else if (s2 > 0)
+                {
+                    GameObject newObject = Instantiate(e2);
+                    s2--;
+                }
+                else if (s3 > 0)
+                {
+                    GameObject newObject = Instantiate(e3);
+                    s3--;
+                }
+                else if (s4 > 0)
+                {
+                    GameObject newObject = Instantiate(e4);
+                    s1=10;
+                    s2=10;
+                    s3=10;
+                }
+                
+                timer = 0;
+            }
+        }
+
         
         
     }
