@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2.unity
     guid: bb0bb78546e93cf4eaad60a95561b87f
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 38ac04451ac4ea14fb649b24cb748e38
-  - enabled: 1
     path: Assets/Scenes/LevelR.unity
     guid: 2347e937a6240354db40704bf9cfa467
   - enabled: 1
@@ -35,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gamemode.unity
     guid: ace6fabb8b0bf8b4d99e6d6c520dc228
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 38ac04451ac4ea14fb649b24cb748e38
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
