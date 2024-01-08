@@ -35,6 +35,9 @@ public class TowerPlacement : MonoBehaviour
     gameData gData;
     string saveFilePath;
 
+    float timer = 0;    
+    int imcheck =0;
+
     // Start is called before the first frame update
     //void Start()
     //{
@@ -53,6 +56,8 @@ public class TowerPlacement : MonoBehaviour
         saveFilePath = Application.persistentDataPath + "/gData.json";
         string loadgData = File.ReadAllText(saveFilePath);
         gData = JsonUtility.FromJson<gameData>(loadgData);
+        
+
     }
     // Update is called once per frame
     void Update()
@@ -63,11 +68,15 @@ public class TowerPlacement : MonoBehaviour
         {
             money = 99999999;
         }
-        else if (gData.imoney == 1)
+
+        timer += Time.deltaTime;
+        
+        while (timer > 0.5 && gData.infinite == 1 && imcheck==0) //Spawn Enemy
         {
             money = 700;
+            imcheck = 1;
         }
-
+        
         moneyText.text = "$" + money;
         if (CurrentPlacingTower != null)
         {
