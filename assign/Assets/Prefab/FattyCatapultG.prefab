@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7918784622507148967}
   - component: {fileID: 1271781800515314387}
   - component: {fileID: 8593229171224629334}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FireFx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4856,7 +4856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4620454089777549878}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4891,7 +4891,7 @@ GameObject:
   - component: {fileID: 7860904603631522703}
   - component: {fileID: 3903512743943161208}
   - component: {fileID: 9218627145626549266}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4974,7 +4974,7 @@ GameObject:
   - component: {fileID: 2894994020741665729}
   - component: {fileID: 1171312416632644377}
   - component: {fileID: 2496368797398768767}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Eff_Spark00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9818,7 +9818,7 @@ GameObject:
   - component: {fileID: 7156058072693860188}
   - component: {fileID: 3264112176046340018}
   - component: {fileID: 8103266595909684828}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9951,7 +9951,7 @@ GameObject:
   - component: {fileID: 2484466472001257828}
   - component: {fileID: 1140994030306440641}
   - component: {fileID: 6847586793860355126}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FattyCatapultG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10122,7 +10122,7 @@ GameObject:
   - component: {fileID: 8930250205148889420}
   - component: {fileID: 8386317538504277848}
   - component: {fileID: 8049202494681642910}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CatapultG_Arm02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10207,7 +10207,8 @@ GameObject:
   - component: {fileID: 8612955141179564019}
   - component: {fileID: 7444465664613389616}
   - component: {fileID: 1512405522721406948}
-  m_Layer: 0
+  - component: {fileID: 7349711621494375160}
+  m_Layer: 2
   m_Name: CatapultG_Plate00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10279,6 +10280,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7349711621494375160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5940157942048646888}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.00161, y: 0.10803268, z: 2.002487}
+  m_Center: {x: -0.00000005960464, y: 0.15, z: 0.00000005960464}
 --- !u!1 &6472279091868587479
 GameObject:
   m_ObjectHideFlags: 0
@@ -10288,7 +10310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577607567338950556}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10321,7 +10343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2450682120283057314}
   - component: {fileID: 2203622589914947545}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10380,7 +10402,7 @@ GameObject:
   - component: {fileID: 3454293948476882038}
   - component: {fileID: 4051700721590248470}
   - component: {fileID: 4530079901752492565}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: CanvasU
   m_TagString: CanvasU
   m_Icon: {fileID: 0}
@@ -10515,7 +10537,7 @@ GameObject:
   - component: {fileID: 7853602141966447844}
   - component: {fileID: 1765188956009559616}
   - component: {fileID: 5536489185871666686}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10649,7 +10671,7 @@ GameObject:
   - component: {fileID: 8660979176170059582}
   - component: {fileID: 1156891546063916352}
   - component: {fileID: 4168568193655683245}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet03 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10732,7 +10754,7 @@ GameObject:
   - component: {fileID: 4409459763066261239}
   - component: {fileID: 7026447756836312316}
   - component: {fileID: 7094014974673251655}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CatapultG_Stand00
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3744107411527086551}
   - component: {fileID: 795677869211845334}
   - component: {fileID: 7472544959567829855}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet_GunUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 188152973319103827}
   - component: {fileID: 1865239985529588775}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 1246245072249261023}
   - component: {fileID: 2622639853943870676}
   - component: {fileID: 718219412745282386}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet00
   m_TagString: Untagged
   m_Icon: {fileID: 0}

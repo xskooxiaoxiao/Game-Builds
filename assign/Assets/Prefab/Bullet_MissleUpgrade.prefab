@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780663367757562298}
   - component: {fileID: 6777576426584684356}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 567274465697032051}
   - component: {fileID: 8471081113075124191}
   - component: {fileID: 9049875042677572441}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 4526604043505565114}
   - component: {fileID: 6047333063880033675}
   - component: {fileID: 5659376593208737181}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bullet_MissleUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
