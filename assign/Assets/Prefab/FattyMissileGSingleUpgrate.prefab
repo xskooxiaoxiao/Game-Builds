@@ -5404,7 +5404,7 @@ MonoBehaviour:
   turreyHead: {fileID: 1153683114471188322}
   attackDist: 7
   attackDamage: 15
-  shootCoolDown: 0.6
+  shootCoolDown: 0.7
   loockSpeed: 200
   randomRot: {x: 0, y: 0, z: 0}
   animator: {fileID: 0}

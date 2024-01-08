@@ -9991,10 +9991,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTarget: {fileID: 0}
   turreyHead: {fileID: 2450682120283057314}
-  attackDist: 8
+  attackDist: 10
   attackDamage: 50
   shootCoolDown: 1
-  loockSpeed: 0.0001
+  loockSpeed: 100
   randomRot: {x: 0, y: 0, z: 0}
   animator: {fileID: 0}
   turretType: 3
